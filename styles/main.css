@@ -1,0 +1,4272 @@
+:root {
+  --indicator-pos-x: 0;
+  --indicator-pos-y: 0;
+}
+
+/* Font Weight */
+/* Color Scheme */
+/* GREEN */
+/* Btns */
+/* Alerts */
+/* Dimensions */
+/* Devices Width */
+/* Container Width */
+/* Speeds */
+/* Paddings */
+* {
+  outline: 0 none;
+  -moz-outline: 0 none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: none;
+  font-family: "Inter", sans-serif;
+}
+*:focus {
+  outline: 0 none;
+  -moz-outline: 0 none;
+}
+*:before, *:after {
+  box-sizing: border-box;
+}
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-kerning: none;
+  letter-spacing: 0;
+  font-variant-numeric: lining-nums;
+  font-optical-sizing: auto;
+}
+
+html {
+  transition: 100ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 100ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 100ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 100ms cubic-bezier(0.42, 0, 0.58, 1);
+  position: relative;
+  float: right;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  background-color: #0f1012;
+}
+html.dropin:before {
+  content: " ";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2000;
+}
+html.locked {
+  overflow: hidden;
+}
+html:before {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("https://images.unsplash.com/photo-1724464249707-0bcbb9bd5986?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-image: url("https://images.unsplash.com/photo-1709562493281-03c47edcb046?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  opacity: 0.2;
+}
+
+body {
+  position: relative;
+  float: right;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  min-height: 100vh;
+  background-color: transparent;
+}
+
+.contain {
+  position: relative;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: stretch;
+  align-content: stretch;
+  padding: 0 160px;
+}
+@media (min-width: 1500px) {
+  .contain {
+    padding: 0 80px;
+  }
+}
+@media (max-width: 1900px) {
+  .contain {
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1250px) {
+  .contain {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 450px) {
+  .contain {
+    padding: 0 20px;
+  }
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  z-index: 10;
+  padding: 0 30px;
+}
+.container:before, .container:after {
+  content: " ";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+@media (min-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 900px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media (min-width: 1251px) {
+  .container {
+    max-width: 985px;
+    max-width: 90%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1685px;
+  }
+}
+
+.forth-w {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 25%;
+  width: 100%;
+  float: left;
+}
+@media (max-width: 767px) {
+  .forth-w {
+    max-width: 100%;
+  }
+}
+
+.third-w {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 33.33333333%;
+  width: 100%;
+  float: left;
+}
+@media (max-width: 767px) {
+  .third-w {
+    max-width: 100%;
+  }
+}
+
+.half-w {
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 50%;
+  width: 100%;
+  float: left;
+}
+@media (max-width: 767px) {
+  .half-w {
+    max-width: 100%;
+  }
+}
+
+.full-w {
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  float: left;
+}
+@media (max-width: 767px) {
+  .full-w {
+    max-width: 100%;
+  }
+}
+
+.col-1 {
+  position: relative;
+  float: left;
+  width: 4.1%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 767px) {
+  .col-1 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+  }
+}
+
+.col-2 {
+  position: relative;
+  float: left;
+  width: 8.3%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 767px) {
+  .col-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.col-3 {
+  position: relative;
+  float: left;
+  width: 12.5%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 767px) {
+  .col-3 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+  }
+}
+
+.col-4 {
+  position: relative;
+  display: block;
+  float: left;
+  width: 16.6%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 767px) {
+  .col-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+  }
+}
+
+.col-5 {
+  position: relative;
+  float: left;
+  width: 20.8%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 767px) {
+  .col-5 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+  }
+}
+
+.col-6 {
+  position: relative;
+  float: left;
+  width: 25%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 767px) {
+  .col-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+  }
+}
+
+.col-7 {
+  position: relative;
+  float: left;
+  width: 29.1%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 767px) {
+  .col-7 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+  }
+}
+
+.col-8 {
+  position: relative;
+  float: left;
+  width: 33.3%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 767px) {
+  .col-8 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+  }
+}
+
+.col-9 {
+  position: relative;
+  float: left;
+  width: 37.5%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 767px) {
+  .col-9 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+  }
+}
+
+.col-10 {
+  position: relative;
+  float: left;
+  width: 41.6%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 767px) {
+  .col-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+  }
+}
+
+.col-11 {
+  position: relative;
+  float: left;
+  width: 45.8%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 767px) {
+  .col-11 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+  }
+}
+
+.col-12 {
+  position: relative;
+  float: left;
+  width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 767px) {
+  .col-12 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+  }
+}
+
+.col-13 {
+  position: relative;
+  float: left;
+  width: 54.1%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 767px) {
+  .col-13 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+  }
+}
+
+.col-14 {
+  position: relative;
+  float: left;
+  width: 58.3%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 767px) {
+  .col-14 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+  }
+}
+
+.col-15 {
+  position: relative;
+  float: left;
+  width: 62.5%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 767px) {
+  .col-15 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+  }
+}
+
+.col-16 {
+  position: relative;
+  float: left;
+  width: 66.6%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 767px) {
+  .col-16 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+  }
+}
+
+.col-17 {
+  position: relative;
+  float: left;
+  width: 70.8%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 767px) {
+  .col-17 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+  }
+}
+
+.col-18 {
+  position: relative;
+  float: left;
+  width: 75%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 767px) {
+  .col-18 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+  }
+}
+
+.col-19 {
+  position: relative;
+  float: left;
+  width: 79.1%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 767px) {
+  .col-19 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+  }
+}
+
+.col-20 {
+  position: relative;
+  float: left;
+  width: 83.3%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 767px) {
+  .col-20 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+  }
+}
+
+.col-21 {
+  position: relative;
+  float: left;
+  width: 87.5%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 767px) {
+  .col-21 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+  }
+}
+
+.col-22 {
+  position: relative;
+  float: left;
+  width: 91.6%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 767px) {
+  .col-22 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+  }
+}
+
+.col-23 {
+  position: relative;
+  float: left;
+  width: 95.8%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 767px) {
+  .col-23 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+  }
+}
+
+.col-24 {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 767px) {
+  .col-24 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+@media (max-width: 767px) {
+  .hidden-phone {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 899px) {
+  .hidden-phone {
+    display: block !important;
+  }
+}
+@media (min-width: 900px) {
+  .hidden-phone {
+    display: block !important;
+  }
+}
+@media (min-width: 1251px) {
+  .hidden-phone {
+    display: block !important;
+  }
+}
+@media (min-width: 1200px) {
+  .hidden-phone {
+    display: block !important;
+  }
+}
+@media (max-width: 767px) {
+  .hidden-tablet-middle {
+    display: block;
+  }
+}
+@media (min-width: 768px) and (max-width: 899px) {
+  .hidden-tablet-middle {
+    display: none !important;
+  }
+}
+@media (min-width: 900px) {
+  .hidden-tablet-middle {
+    display: block;
+  }
+}
+@media (min-width: 1251px) {
+  .hidden-tablet-middle {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .hidden-tablet-middle {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .hidden-tablet {
+    display: block;
+  }
+}
+@media (min-width: 768px) and (max-width: 899px) {
+  .hidden-tablet {
+    display: block;
+  }
+}
+@media (min-width: 900px) {
+  .hidden-tablet {
+    display: none !important;
+  }
+}
+@media (min-width: 1251px) {
+  .hidden-tablet {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .hidden-tablet {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .hidden-desktop {
+    display: block;
+  }
+}
+@media (min-width: 768px) and (max-width: 899px) {
+  .hidden-desktop {
+    display: block;
+  }
+}
+@media (min-width: 900px) {
+  .hidden-desktop {
+    display: block;
+  }
+}
+@media (min-width: 1251px) {
+  .hidden-desktop {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  .hidden-desktop {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .hidden-desktop-large {
+    display: block;
+  }
+}
+@media (min-width: 768px) and (max-width: 899px) {
+  .hidden-desktop-large {
+    display: block;
+  }
+}
+@media (min-width: 900px) {
+  .hidden-desktop-large {
+    display: block;
+  }
+}
+@media (min-width: 1251px) {
+  .hidden-desktop-large {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .hidden-desktop-large {
+    display: none !important;
+  }
+}
+
+.visible {
+  display: block !important;
+}
+@media (max-width: 767px) {
+  .visible-phone {
+    display: block !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 899px) {
+  .visible-phone {
+    display: none !important;
+  }
+}
+@media (min-width: 900px) {
+  .visible-phone {
+    display: none !important;
+  }
+}
+@media (min-width: 1251px) {
+  .visible-phone {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  .visible-phone {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) {
+  .visible-tablet-middle {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 899px) {
+  .visible-tablet-middle {
+    display: block !important;
+  }
+}
+@media (min-width: 900px) {
+  .visible-tablet-middle {
+    display: none;
+  }
+}
+@media (min-width: 1251px) {
+  .visible-tablet-middle {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .visible-tablet-middle {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .visible-tablet {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 899px) {
+  .visible-tablet {
+    display: block !important;
+  }
+}
+@media (min-width: 900px) {
+  .visible-tablet {
+    display: block !important;
+  }
+}
+@media (min-width: 1251px) {
+  .visible-tablet {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .visible-tablet {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .visible-desktop {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 899px) {
+  .visible-desktop {
+    display: none;
+  }
+}
+@media (min-width: 900px) {
+  .visible-desktop {
+    display: none;
+  }
+}
+@media (min-width: 1251px) {
+  .visible-desktop {
+    display: block !important;
+  }
+}
+@media (min-width: 1200px) {
+  .visible-desktop {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .visible-desktop-large {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 899px) {
+  .visible-desktop-large {
+    display: none;
+  }
+}
+@media (min-width: 900px) {
+  .visible-desktop-large {
+    display: none;
+  }
+}
+@media (min-width: 1251px) {
+  .visible-desktop-large {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .visible-desktop-large {
+    display: block !important;
+  }
+}
+
+.unvisible {
+  visibility: hidden !important;
+}
+
+.align__left {
+  text-align: left !important;
+}
+.align__center {
+  text-align: center !important;
+}
+.align__right {
+  text-align: right !important;
+}
+
+.shadows {
+  -moz-box-shadow: 0px 0px 20px #ddd;
+  -webkit-box-shadow: 0px 0px 20px #ddd;
+  box-shadow: 0px 0px 20px #ddd;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=20, Direction=90, Color='#dddddd')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=20, Direction=90, Color="#dddddd");
+}
+
+.right {
+  float: right;
+}
+
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9000;
+  padding: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  background-color: #0f1012;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+#nav div.container {
+  padding: 15px 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  z-index: 20;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+#nav div.container a.logo,
+#nav div.container a.logo:focus,
+#nav div.container a.logo:active,
+#nav div.container a.logo:visited {
+  position: relative;
+  float: left;
+  margin: auto 0;
+}
+#nav div.container a.logo img,
+#nav div.container a.logo:focus img,
+#nav div.container a.logo:active img,
+#nav div.container a.logo:visited img {
+  position: relative;
+  float: left;
+  margin: 0;
+  height: 30px;
+}
+#nav div.container button.submit,
+#nav div.container button.submit:focus,
+#nav div.container button.submit:active,
+#nav div.container button.submit:visited,
+#nav div.container button.search,
+#nav div.container button.search:focus,
+#nav div.container button.search:active,
+#nav div.container button.search:visited {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  position: relative;
+  float: left;
+  margin: 0 0 0 auto;
+  padding: 0;
+  cursor: pointer;
+  background-color: #343A40;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  opacity: 1;
+}
+#nav div.container button.submit svg,
+#nav div.container button.submit:focus svg,
+#nav div.container button.submit:active svg,
+#nav div.container button.submit:visited svg,
+#nav div.container button.search svg,
+#nav div.container button.search:focus svg,
+#nav div.container button.search:active svg,
+#nav div.container button.search:visited svg {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  margin: auto;
+  top: 0;
+  right: 0;
+}
+@media (max-width: 850px) {
+  #nav div.container button.submit svg,
+  #nav div.container button.submit:focus svg,
+  #nav div.container button.submit:active svg,
+  #nav div.container button.submit:visited svg,
+  #nav div.container button.search svg,
+  #nav div.container button.search:focus svg,
+  #nav div.container button.search:active svg,
+  #nav div.container button.search:visited svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+@media (hover: hover) {
+  #nav div.container button.submit:hover,
+  #nav div.container button.submit:focus:hover,
+  #nav div.container button.submit:active:hover,
+  #nav div.container button.submit:visited:hover,
+  #nav div.container button.search:hover,
+  #nav div.container button.search:focus:hover,
+  #nav div.container button.search:active:hover,
+  #nav div.container button.search:visited:hover {
+    opacity: 0.8;
+  }
+}
+#nav div.container button.menu,
+#nav div.container button.menu:focus,
+#nav div.container button.menu:active,
+#nav div.container button.menu:visited {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  position: relative;
+  float: left;
+  margin: 0 0 0 auto;
+  background-color: transparent;
+  padding: 0;
+  display: none;
+  cursor: pointer;
+}
+#nav div.container button.menu svg,
+#nav div.container button.menu:focus svg,
+#nav div.container button.menu:active svg,
+#nav div.container button.menu:visited svg {
+  position: relative;
+  float: left;
+  width: 30px;
+  height: 30px;
+}
+#nav div.container button.menu svg.menu,
+#nav div.container button.menu:focus svg.menu,
+#nav div.container button.menu:active svg.menu,
+#nav div.container button.menu:visited svg.menu {
+  display: block;
+}
+#nav div.container button.menu svg.close,
+#nav div.container button.menu:focus svg.close,
+#nav div.container button.menu:active svg.close,
+#nav div.container button.menu:visited svg.close {
+  display: none;
+}
+#nav div.container button.menu,
+#nav div.container button.menu:focus,
+#nav div.container button.menu:active,
+#nav div.container button.menu:visited {
+  opacity: 0.5;
+}
+@media (hover: hover) {
+  #nav div.container button.menu:hover,
+  #nav div.container button.menu:focus:hover,
+  #nav div.container button.menu:active:hover,
+  #nav div.container button.menu:visited:hover {
+    opacity: 0.8;
+  }
+}
+#nav div.container button.menu.active,
+#nav div.container button.menu:focus.active,
+#nav div.container button.menu:active.active,
+#nav div.container button.menu:visited.active {
+  opacity: 1;
+  transform: rotate(360deg);
+}
+#nav div.container button.menu.active svg.menu,
+#nav div.container button.menu:focus.active svg.menu,
+#nav div.container button.menu:active.active svg.menu,
+#nav div.container button.menu:visited.active svg.menu {
+  display: none;
+}
+#nav div.container button.menu.active svg.close,
+#nav div.container button.menu:focus.active svg.close,
+#nav div.container button.menu:active.active svg.close,
+#nav div.container button.menu:visited.active svg.close {
+  display: block;
+}
+#nav div.container > ul {
+  color: #FFFFFF;
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin: auto 0 auto auto;
+  gap: 20px;
+  padding: 0;
+  transform: translateX(0);
+}
+#nav div.container > ul li {
+  position: relative;
+  color: inherit;
+  order: 0;
+  margin: auto 0;
+}
+#nav div.container > ul li a,
+#nav div.container > ul li a:focus,
+#nav div.container > ul li a:active,
+#nav div.container > ul li a:visited,
+#nav div.container > ul li button,
+#nav div.container > ul li button:focus,
+#nav div.container > ul li button:active,
+#nav div.container > ul li button:visited {
+  position: relative;
+  width: 100%;
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  color: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  opacity: 0.5;
+  background-color: transparent;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  cursor: pointer;
+}
+#nav div.container > ul li a svg,
+#nav div.container > ul li a:focus svg,
+#nav div.container > ul li a:active svg,
+#nav div.container > ul li a:visited svg,
+#nav div.container > ul li button svg,
+#nav div.container > ul li button:focus svg,
+#nav div.container > ul li button:active svg,
+#nav div.container > ul li button:visited svg {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+}
+#nav div.container > ul li a:has(svg),
+#nav div.container > ul li a:focus:has(svg),
+#nav div.container > ul li a:active:has(svg),
+#nav div.container > ul li a:visited:has(svg),
+#nav div.container > ul li button:has(svg),
+#nav div.container > ul li button:focus:has(svg),
+#nav div.container > ul li button:active:has(svg),
+#nav div.container > ul li button:visited:has(svg) {
+  padding-right: 15px;
+}
+@media (hover: hover) {
+  #nav div.container > ul li a:hover,
+  #nav div.container > ul li a:focus:hover,
+  #nav div.container > ul li a:active:hover,
+  #nav div.container > ul li a:visited:hover,
+  #nav div.container > ul li button:hover,
+  #nav div.container > ul li button:focus:hover,
+  #nav div.container > ul li button:active:hover,
+  #nav div.container > ul li button:visited:hover {
+    opacity: 0.8;
+  }
+}
+#nav div.container > ul li a.active, #nav div.container > ul li a.open,
+#nav div.container > ul li a:focus.active,
+#nav div.container > ul li a:focus.open,
+#nav div.container > ul li a:active.active,
+#nav div.container > ul li a:active.open,
+#nav div.container > ul li a:visited.active,
+#nav div.container > ul li a:visited.open,
+#nav div.container > ul li button.active,
+#nav div.container > ul li button.open,
+#nav div.container > ul li button:focus.active,
+#nav div.container > ul li button:focus.open,
+#nav div.container > ul li button:active.active,
+#nav div.container > ul li button:active.open,
+#nav div.container > ul li button:visited.active,
+#nav div.container > ul li button:visited.open {
+  opacity: 1;
+}
+#nav div.container > ul li a.open svg,
+#nav div.container > ul li a:focus.open svg,
+#nav div.container > ul li a:active.open svg,
+#nav div.container > ul li a:visited.open svg,
+#nav div.container > ul li button.open svg,
+#nav div.container > ul li button:focus.open svg,
+#nav div.container > ul li button:active.open svg,
+#nav div.container > ul li button:visited.open svg {
+  transform: rotate(180deg);
+}
+@media (max-width: 650px) {
+  #nav div.container > ul li a,
+  #nav div.container > ul li a:focus,
+  #nav div.container > ul li a:active,
+  #nav div.container > ul li a:visited,
+  #nav div.container > ul li button,
+  #nav div.container > ul li button:focus,
+  #nav div.container > ul li button:active,
+  #nav div.container > ul li button:visited {
+    text-transform: none;
+  }
+}
+#nav div.container > ul li ul {
+  position: absolute;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  width: 100%;
+  min-width: 180px;
+  top: 100%;
+  margin: 20px 0 0 0;
+  padding: 10px 0;
+  border: 1px solid rgba(0, 0, 0, 0.175);
+  color: #0f1012;
+  gap: 0;
+  height: auto;
+  display: none;
+}
+#nav div.container > ul li ul li {
+  position: relative;
+  float: left;
+  width: 100%;
+  display: inline-block;
+}
+#nav div.container > ul li ul li a,
+#nav div.container > ul li ul li a:focus,
+#nav div.container > ul li ul li a:active,
+#nav div.container > ul li ul li a:visited,
+#nav div.container > ul li ul li button,
+#nav div.container > ul li ul li button:focus,
+#nav div.container > ul li ul li button:active,
+#nav div.container > ul li ul li button:visited {
+  position: relative;
+  float: left;
+  width: 100%;
+  opacity: 1;
+  padding: 15px 15px 10px 15px;
+}
+@media (hover: hover) {
+  #nav div.container > ul li ul li a:hover,
+  #nav div.container > ul li ul li a:focus:hover,
+  #nav div.container > ul li ul li a:active:hover,
+  #nav div.container > ul li ul li a:visited:hover,
+  #nav div.container > ul li ul li button:hover,
+  #nav div.container > ul li ul li button:focus:hover,
+  #nav div.container > ul li ul li button:active:hover,
+  #nav div.container > ul li ul li button:visited:hover {
+    background-color: #E9E9EA;
+  }
+}
+#nav div.container > ul li ul li a.active,
+#nav div.container > ul li ul li a:focus.active,
+#nav div.container > ul li ul li a:active.active,
+#nav div.container > ul li ul li a:visited.active,
+#nav div.container > ul li ul li button.active,
+#nav div.container > ul li ul li button:focus.active,
+#nav div.container > ul li ul li button:active.active,
+#nav div.container > ul li ul li button:visited.active {
+  background-color: #0f1012;
+  color: #FFFFFF;
+}
+#nav div.container > ul li ul.open {
+  display: flex;
+}
+@media (max-width: 650px) {
+  #nav div.container > ul li ul {
+    position: relative;
+    float: left;
+    width: 100%;
+    top: 0;
+    border-radius: 0;
+  }
+}
+#nav div.container > ul > li:first-child {
+  order: 1;
+}
+@media (max-width: 850px) {
+  #nav div.container > ul {
+    transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    position: fixed;
+    top: 70px;
+    right: 0;
+    z-index: 8000;
+    width: 100%;
+    max-width: 400px;
+    height: calc(100% - 70px);
+    background-color: #0f1012;
+    flex-flow: column nowrap;
+    padding: 20px;
+    gap: 15px;
+    overflow: auto;
+    transform: translateX(100%);
+  }
+  #nav div.container > ul > li {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  #nav div.container > ul > li a,
+  #nav div.container > ul > li a:focus,
+  #nav div.container > ul > li a:active,
+  #nav div.container > ul > li a:visited,
+  #nav div.container > ul > li button,
+  #nav div.container > ul > li button:focus,
+  #nav div.container > ul > li button:active,
+  #nav div.container > ul > li button:visited {
+    width: 100%;
+    padding: 10px 0;
+  }
+  #nav div.container > ul > li:last-child {
+    padding-bottom: 20px;
+    border-bottom: 1px solid color-mix(in srgb, currentColor 15%, transparent);
+  }
+  #nav div.container > ul > li:first-child {
+    order: 0;
+  }
+  #nav div.container > ul.open {
+    transform: translateX(0);
+  }
+}
+#nav div.container #searchForm {
+  position: fixed;
+  width: 100%;
+  top: 100px;
+  right: 0;
+  background-color: #FFFFFF;
+  padding: 0;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  display: none;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+#nav div.container #searchForm input[type=text] {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding: 15px 20px;
+  background-color: #F3F2F2;
+  font-size: 16px;
+  line-height: 30px;
+}
+@media (max-width: 850px) {
+  #nav div.container #searchForm input[type=text] {
+    padding: 5px 15px;
+  }
+}
+#nav div.container #searchForm button,
+#nav div.container #searchForm button:focus,
+#nav div.container #searchForm button:active,
+#nav div.container #searchForm button:visited {
+  background-color: #FFFFFF;
+  height: auto;
+  min-width: 60px;
+}
+#nav div.container #searchForm button svg,
+#nav div.container #searchForm button:focus svg,
+#nav div.container #searchForm button:active svg,
+#nav div.container #searchForm button:visited svg {
+  fill: #0f1012;
+  width: 30px;
+  height: 30px;
+  margin: auto;
+}
+#nav div.container #searchForm.open {
+  display: flex;
+}
+@media (max-width: 850px) {
+  #nav div.container #searchForm {
+    display: flex !important;
+    position: relative;
+    top: 0;
+    width: 100%;
+    margin: 0 0 15px 0;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+  }
+  #nav div.container #searchForm button,
+  #nav div.container #searchForm button:focus,
+  #nav div.container #searchForm button:active,
+  #nav div.container #searchForm button:visited {
+    min-width: 50px;
+  }
+  #nav div.container #searchForm button svg,
+  #nav div.container #searchForm button:focus svg,
+  #nav div.container #searchForm button:active svg,
+  #nav div.container #searchForm button:visited svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (max-width: 850px) {
+  #nav div.container {
+    padding: 20px;
+  }
+  #nav div.container button.search,
+  #nav div.container button.search:focus,
+  #nav div.container button.search:active,
+  #nav div.container button.search:visited {
+    display: none;
+  }
+  #nav div.container button.menu,
+  #nav div.container button.menu:focus,
+  #nav div.container button.menu:active,
+  #nav div.container button.menu:visited {
+    display: block;
+  }
+}
+
+section.cookies {
+  position: fixed;
+  right: 50%;
+  bottom: 0;
+  z-index: 10000;
+  background-color: #0f1012;
+  width: 100%;
+  padding: 30px 30px 0 30px !important;
+  color: #FFFFFF;
+  pointer-events: all;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow: auto;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.4);
+  transform: translateX(50%);
+  border-radius: 10px 10px 0 0;
+}
+section.cookies.alert {
+  max-width: 400px;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+}
+@media (max-width: 767px) {
+  section.cookies {
+    padding: 20px;
+    width: 100%;
+  }
+}
+section.cookies p:not(.title) {
+  position: relative;
+  font-weight: 300;
+  color: inherit;
+  font-size: 14px;
+  line-height: 20px;
+  margin: auto 0 auto auto;
+  width: 100%;
+  letter-spacing: 1px;
+}
+section.cookies p:not(.title) a,
+section.cookies p:not(.title) a:focus,
+section.cookies p:not(.title) a:active,
+section.cookies p:not(.title) a:visited,
+section.cookies p:not(.title) strong {
+  font-weight: 600;
+  color: inherit;
+}
+section.cookies p:not(.title) a,
+section.cookies p:not(.title) a:focus,
+section.cookies p:not(.title) a:active,
+section.cookies p:not(.title) a:visited {
+  position: relative;
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  font-weight: 300;
+  display: inline;
+  border: none;
+  font-size: 14px;
+  line-height: 20px;
+  float: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  letter-spacing: 1px;
+}
+section.cookies p:not(.title) a:hover,
+section.cookies p:not(.title) a:focus:hover,
+section.cookies p:not(.title) a:active:hover,
+section.cookies p:not(.title) a:visited:hover {
+  opacity: 0.5;
+  border: none;
+  background-color: transparent !important;
+}
+@media (max-width: 767px) {
+  section.cookies p:not(.title) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+section.cookies p.title,
+section.cookies h4 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  font-size: 20px;
+  line-height: 24px;
+  margin: auto 0;
+  color: inherit;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+section.cookies p.title svg,
+section.cookies h4 svg {
+  width: 30px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin: 0 10px auto 0;
+  padding: 2px 0;
+}
+section.cookies h5 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 0 0 15px 0;
+  color: inherit;
+  font-weight: 600;
+}
+section.cookies button,
+section.cookies button:focus,
+section.cookies button:active,
+section.cookies button:visited,
+section.cookies a,
+section.cookies a:focus,
+section.cookies a:active,
+section.cookies a:visited {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: background-color, border;
+  -moz-transition-property: background-color, border;
+  -o-transition-property: background-color, border;
+  -webkit-transition-property: background-color, border;
+  padding: 0 15px 0 15px;
+  margin: 0;
+  position: absolute;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 40px;
+  cursor: pointer;
+  background-color: transparent;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-content: flex-end;
+  width: auto;
+  text-align: right;
+  top: 0;
+  right: 0;
+  color: #FFFFFF;
+  pointer-events: all;
+  background-color: #FFFFFF;
+  letter-spacing: 1px;
+}
+section.cookies button svg,
+section.cookies button:focus svg,
+section.cookies button:active svg,
+section.cookies button:visited svg,
+section.cookies a svg,
+section.cookies a:focus svg,
+section.cookies a:active svg,
+section.cookies a:visited svg {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: fill;
+  -moz-transition-property: fill;
+  -o-transition-property: fill;
+  -webkit-transition-property: fill;
+  width: 20px;
+  height: 30px;
+  fill: #FFFFFF;
+  margin: auto 0;
+  padding: 2px 0;
+}
+section.cookies button span,
+section.cookies button:focus span,
+section.cookies button:active span,
+section.cookies button:visited span,
+section.cookies a span,
+section.cookies a:focus span,
+section.cookies a:active span,
+section.cookies a:visited span {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: color;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  color: inherit;
+  margin: auto 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+@media (hover: hover) {
+  section.cookies button:hover,
+  section.cookies button:focus:hover,
+  section.cookies button:active:hover,
+  section.cookies button:visited:hover,
+  section.cookies a:hover,
+  section.cookies a:focus:hover,
+  section.cookies a:active:hover,
+  section.cookies a:visited:hover {
+    color: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+  }
+  section.cookies button:hover svg,
+  section.cookies button:focus:hover svg,
+  section.cookies button:active:hover svg,
+  section.cookies button:visited:hover svg,
+  section.cookies a:hover svg,
+  section.cookies a:focus:hover svg,
+  section.cookies a:active:hover svg,
+  section.cookies a:visited:hover svg {
+    fill: #FFFFFF !important;
+  }
+  section.cookies button:hover.acceptall, section.cookies button:hover.save,
+  section.cookies button:focus:hover.acceptall,
+  section.cookies button:focus:hover.save,
+  section.cookies button:active:hover.acceptall,
+  section.cookies button:active:hover.save,
+  section.cookies button:visited:hover.acceptall,
+  section.cookies button:visited:hover.save,
+  section.cookies a:hover.acceptall,
+  section.cookies a:hover.save,
+  section.cookies a:focus:hover.acceptall,
+  section.cookies a:focus:hover.save,
+  section.cookies a:active:hover.acceptall,
+  section.cookies a:active:hover.save,
+  section.cookies a:visited:hover.acceptall,
+  section.cookies a:visited:hover.save {
+    color: #0f1012 !important;
+  }
+  section.cookies button:hover.acceptall svg, section.cookies button:hover.save svg,
+  section.cookies button:focus:hover.acceptall svg,
+  section.cookies button:focus:hover.save svg,
+  section.cookies button:active:hover.acceptall svg,
+  section.cookies button:active:hover.save svg,
+  section.cookies button:visited:hover.acceptall svg,
+  section.cookies button:visited:hover.save svg,
+  section.cookies a:hover.acceptall svg,
+  section.cookies a:hover.save svg,
+  section.cookies a:focus:hover.acceptall svg,
+  section.cookies a:focus:hover.save svg,
+  section.cookies a:active:hover.acceptall svg,
+  section.cookies a:active:hover.save svg,
+  section.cookies a:visited:hover.acceptall svg,
+  section.cookies a:visited:hover.save svg {
+    fill: #0f1012 !important;
+  }
+  section.cookies button:hover.acceptall, section.cookies button:hover.save,
+  section.cookies button:focus:hover.acceptall,
+  section.cookies button:focus:hover.save,
+  section.cookies button:active:hover.acceptall,
+  section.cookies button:active:hover.save,
+  section.cookies button:visited:hover.acceptall,
+  section.cookies button:visited:hover.save,
+  section.cookies a:hover.acceptall,
+  section.cookies a:hover.save,
+  section.cookies a:focus:hover.acceptall,
+  section.cookies a:focus:hover.save,
+  section.cookies a:active:hover.acceptall,
+  section.cookies a:active:hover.save,
+  section.cookies a:visited:hover.acceptall,
+  section.cookies a:visited:hover.save {
+    background-color: #FFFFFF !important;
+  }
+}
+section.cookies header {
+  position: relative;
+  color: #FFFFFF;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin: 0 0 20px 0;
+}
+section.cookies div.form,
+section.cookies form {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  padding: 20px 0 0 0;
+}
+section.cookies div.form ul,
+section.cookies form ul {
+  list-style: none;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+section.cookies div.form ul li,
+section.cookies form ul li {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+section.cookies div.form ul li button,
+section.cookies div.form ul li button:focus,
+section.cookies div.form ul li button:active,
+section.cookies div.form ul li button:visited,
+section.cookies form ul li button,
+section.cookies form ul li button:focus,
+section.cookies form ul li button:active,
+section.cookies form ul li button:visited {
+  background-color: transparent;
+  position: relative;
+  width: 100%;
+  padding: 0 40px 0 10px;
+  text-align: left;
+  justify-content: flex-start;
+  align-content: flex-start;
+  border: none !important;
+  border-top: 1px dotted #FFFFFF !important;
+}
+section.cookies div.form ul li button svg,
+section.cookies div.form ul li button:focus svg,
+section.cookies div.form ul li button:active svg,
+section.cookies div.form ul li button:visited svg,
+section.cookies form ul li button svg,
+section.cookies form ul li button:focus svg,
+section.cookies form ul li button:active svg,
+section.cookies form ul li button:visited svg {
+  margin: auto 10px auto 0;
+}
+section.cookies div.form ul li button small,
+section.cookies div.form ul li button:focus small,
+section.cookies div.form ul li button:active small,
+section.cookies div.form ul li button:visited small,
+section.cookies form ul li button small,
+section.cookies form ul li button:focus small,
+section.cookies form ul li button:active small,
+section.cookies form ul li button:visited small {
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 0 3px;
+  text-align: center;
+  margin: auto auto auto 10px;
+  letter-spacing: 1px;
+}
+section.cookies div.form ul li button.open svg,
+section.cookies div.form ul li button:focus.open svg,
+section.cookies div.form ul li button:active.open svg,
+section.cookies div.form ul li button:visited.open svg,
+section.cookies form ul li button.open svg,
+section.cookies form ul li button:focus.open svg,
+section.cookies form ul li button:active.open svg,
+section.cookies form ul li button:visited.open svg {
+  transform: rotate(180deg);
+}
+section.cookies div.form ul li label,
+section.cookies form ul li label {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  margin: auto 0 auto auto;
+}
+section.cookies div.form ul li div,
+section.cookies form ul li div {
+  position: relative;
+  width: 100%;
+  display: none;
+  padding: 20px;
+  overflow: auto;
+  max-height: 180px;
+}
+section.cookies div.form ul li div.open,
+section.cookies form ul li div.open {
+  display: block;
+}
+section.cookies div.form ul li div table,
+section.cookies form ul li div table {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0 0 0;
+  text-align: left;
+  border: none;
+  background-color: transparent;
+  letter-spacing: 1px;
+}
+section.cookies div.form ul li div table *,
+section.cookies form ul li div table * {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+section.cookies div.form ul li div table caption,
+section.cookies form ul li div table caption {
+  letter-spacing: 1px;
+  margin: 0 0 20px 0;
+}
+section.cookies div.form ul li div table thead,
+section.cookies div.form ul li div table thead *,
+section.cookies form ul li div table thead,
+section.cookies form ul li div table thead * {
+  margin: 0;
+  font-weight: 600;
+  padding: 5px 0;
+  border-bottom: 1px dotted #FFFFFF;
+}
+section.cookies div.form ul li div table tbody tr:first-child td,
+section.cookies form ul li div table tbody tr:first-child td {
+  padding: 5px 0 0 0;
+  letter-spacing: 1px;
+}
+section.cookies div.form ul li div table thead,
+section.cookies form ul li div table thead {
+  position: sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  top: -20px;
+  z-index: 100;
+  background-color: #313131;
+}
+section.cookies div.form label,
+section.cookies form label {
+  position: relative;
+  margin: auto 30px auto 0;
+  width: auto !important;
+  font-size: 16px;
+  line-height: 40px;
+  padding: 0 0 0 35px;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+section.cookies div.form label input,
+section.cookies form label input {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: background-color, border, background-image, background-position;
+  -moz-transition-property: background-color, border, background-image, background-position;
+  -o-transition-property: background-color, border, background-image, background-position;
+  -webkit-transition-property: background-color, border, background-image, background-position;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid #FFFFFF;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 -960 960 960' width='24'%3E%3Cpath style='fill: %23FFFFFF;' d='M382-253.847 168.616-467.231l42.769-42.768L382-339.384l366.615-366.615 42.769 42.768L382-253.847Z'/%3E%3C/svg%3E");
+  background-position: center -30px;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+section.cookies div.form label input:hover,
+section.cookies form label input:hover {
+  background-position: center;
+}
+section.cookies div.form label input:after, section.cookies div.form label input:before,
+section.cookies form label input:after,
+section.cookies form label input:before {
+  display: none !important;
+}
+section.cookies div.form label input:checked,
+section.cookies form label input:checked {
+  background-position: center;
+  border: 1px solid #FFFFFF;
+}
+section.cookies div.form label input:disabled,
+section.cookies form label input:disabled {
+  opacity: 0.5;
+}
+section.cookies div.footer,
+section.cookies footer {
+  position: sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: -webkit-sticky;
+  bottom: 0;
+  background-color: #313131;
+  width: 100%;
+  border-top: 1px dashed #FFFFFF;
+  margin: 30px 0 0 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-content: flex-start;
+  padding: 30px 0;
+}
+section.cookies div.footer button,
+section.cookies div.footer button:focus,
+section.cookies div.footer button:active,
+section.cookies div.footer button:visited,
+section.cookies div.footer a,
+section.cookies div.footer a:focus,
+section.cookies div.footer a:active,
+section.cookies div.footer a:visited,
+section.cookies footer button,
+section.cookies footer button:focus,
+section.cookies footer button:active,
+section.cookies footer button:visited,
+section.cookies footer a,
+section.cookies footer a:focus,
+section.cookies footer a:active,
+section.cookies footer a:visited {
+  justify-content: flex-start;
+  align-content: flex-start;
+  text-align: left;
+  padding: 10px 15px;
+  margin: 0 0 0 20px;
+  position: relative;
+  line-height: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+section.cookies div.footer button span,
+section.cookies div.footer button:focus span,
+section.cookies div.footer button:active span,
+section.cookies div.footer button:visited span,
+section.cookies div.footer a span,
+section.cookies div.footer a:focus span,
+section.cookies div.footer a:active span,
+section.cookies div.footer a:visited span,
+section.cookies footer button span,
+section.cookies footer button:focus span,
+section.cookies footer button:active span,
+section.cookies footer button:visited span,
+section.cookies footer a span,
+section.cookies footer a:focus span,
+section.cookies footer a:active span,
+section.cookies footer a:visited span {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+section.cookies div.footer button.acceptall, section.cookies div.footer button.save,
+section.cookies div.footer button:focus.acceptall,
+section.cookies div.footer button:focus.save,
+section.cookies div.footer button:active.acceptall,
+section.cookies div.footer button:active.save,
+section.cookies div.footer button:visited.acceptall,
+section.cookies div.footer button:visited.save,
+section.cookies div.footer a.acceptall,
+section.cookies div.footer a.save,
+section.cookies div.footer a:focus.acceptall,
+section.cookies div.footer a:focus.save,
+section.cookies div.footer a:active.acceptall,
+section.cookies div.footer a:active.save,
+section.cookies div.footer a:visited.acceptall,
+section.cookies div.footer a:visited.save,
+section.cookies footer button.acceptall,
+section.cookies footer button.save,
+section.cookies footer button:focus.acceptall,
+section.cookies footer button:focus.save,
+section.cookies footer button:active.acceptall,
+section.cookies footer button:active.save,
+section.cookies footer button:visited.acceptall,
+section.cookies footer button:visited.save,
+section.cookies footer a.acceptall,
+section.cookies footer a.save,
+section.cookies footer a:focus.acceptall,
+section.cookies footer a:focus.save,
+section.cookies footer a:active.acceptall,
+section.cookies footer a:active.save,
+section.cookies footer a:visited.acceptall,
+section.cookies footer a:visited.save {
+  font-weight: 600;
+  background-color: #FFFFFF;
+  color: #0f1012;
+  letter-spacing: 1px;
+}
+section.cookies div.footer button.acceptall svg, section.cookies div.footer button.save svg,
+section.cookies div.footer button:focus.acceptall svg,
+section.cookies div.footer button:focus.save svg,
+section.cookies div.footer button:active.acceptall svg,
+section.cookies div.footer button:active.save svg,
+section.cookies div.footer button:visited.acceptall svg,
+section.cookies div.footer button:visited.save svg,
+section.cookies div.footer a.acceptall svg,
+section.cookies div.footer a.save svg,
+section.cookies div.footer a:focus.acceptall svg,
+section.cookies div.footer a:focus.save svg,
+section.cookies div.footer a:active.acceptall svg,
+section.cookies div.footer a:active.save svg,
+section.cookies div.footer a:visited.acceptall svg,
+section.cookies div.footer a:visited.save svg,
+section.cookies footer button.acceptall svg,
+section.cookies footer button.save svg,
+section.cookies footer button:focus.acceptall svg,
+section.cookies footer button:focus.save svg,
+section.cookies footer button:active.acceptall svg,
+section.cookies footer button:active.save svg,
+section.cookies footer button:visited.acceptall svg,
+section.cookies footer button:visited.save svg,
+section.cookies footer a.acceptall svg,
+section.cookies footer a.save svg,
+section.cookies footer a:focus.acceptall svg,
+section.cookies footer a:focus.save svg,
+section.cookies footer a:active.acceptall svg,
+section.cookies footer a:active.save svg,
+section.cookies footer a:visited.acceptall svg,
+section.cookies footer a:visited.save svg {
+  fill: #0f1012;
+}
+@media (max-width: 800px) {
+  section.cookies div.footer button,
+  section.cookies div.footer button:focus,
+  section.cookies div.footer button:active,
+  section.cookies div.footer button:visited,
+  section.cookies div.footer a,
+  section.cookies div.footer a:focus,
+  section.cookies div.footer a:active,
+  section.cookies div.footer a:visited,
+  section.cookies footer button,
+  section.cookies footer button:focus,
+  section.cookies footer button:active,
+  section.cookies footer button:visited,
+  section.cookies footer a,
+  section.cookies footer a:focus,
+  section.cookies footer a:active,
+  section.cookies footer a:visited {
+    justify-content: center;
+    align-content: center;
+    margin: 20px 0 0 10px;
+    width: calc(50% - 10px);
+  }
+  section.cookies div.footer button:nth-child(odd),
+  section.cookies div.footer button:focus:nth-child(odd),
+  section.cookies div.footer button:active:nth-child(odd),
+  section.cookies div.footer button:visited:nth-child(odd),
+  section.cookies div.footer a:nth-child(odd),
+  section.cookies div.footer a:focus:nth-child(odd),
+  section.cookies div.footer a:active:nth-child(odd),
+  section.cookies div.footer a:visited:nth-child(odd),
+  section.cookies footer button:nth-child(odd),
+  section.cookies footer button:focus:nth-child(odd),
+  section.cookies footer button:active:nth-child(odd),
+  section.cookies footer button:visited:nth-child(odd),
+  section.cookies footer a:nth-child(odd),
+  section.cookies footer a:focus:nth-child(odd),
+  section.cookies footer a:active:nth-child(odd),
+  section.cookies footer a:visited:nth-child(odd) {
+    margin: 20px 10px 0 0;
+  }
+}
+section.cookies div.footer a:not(.acceptall),
+section.cookies div.footer a:not(.acceptall):focus,
+section.cookies div.footer a:not(.acceptall):active,
+section.cookies div.footer a:not(.acceptall):visited,
+section.cookies footer a:not(.acceptall),
+section.cookies footer a:not(.acceptall):focus,
+section.cookies footer a:not(.acceptall):active,
+section.cookies footer a:not(.acceptall):visited {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  padding: 0;
+  margin: auto 30px auto 0;
+  position: relative;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-content: flex-end;
+  width: auto;
+  text-align: right;
+  color: #FFFFFF;
+  pointer-events: all;
+  text-decoration: none;
+  border: none;
+}
+section.cookies div.footer a:not(.acceptall) span,
+section.cookies div.footer a:not(.acceptall):focus span,
+section.cookies div.footer a:not(.acceptall):active span,
+section.cookies div.footer a:not(.acceptall):visited span,
+section.cookies footer a:not(.acceptall) span,
+section.cookies footer a:not(.acceptall):focus span,
+section.cookies footer a:not(.acceptall):active span,
+section.cookies footer a:not(.acceptall):visited span {
+  color: inherit;
+  margin: auto 0;
+  font-weight: 600;
+  font-size: 14px;
+}
+section.cookies div.footer a:not(.acceptall):after,
+section.cookies div.footer a:not(.acceptall):focus:after,
+section.cookies div.footer a:not(.acceptall):active:after,
+section.cookies div.footer a:not(.acceptall):visited:after,
+section.cookies footer a:not(.acceptall):after,
+section.cookies footer a:not(.acceptall):focus:after,
+section.cookies footer a:not(.acceptall):active:after,
+section.cookies footer a:not(.acceptall):visited:after {
+  position: absolute;
+  right: -15px;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  background-color: #FFFFFF;
+  content: " ";
+  display: block;
+}
+@media (max-width: 800px) {
+  section.cookies div.footer a:not(.acceptall):after,
+  section.cookies div.footer a:not(.acceptall):focus:after,
+  section.cookies div.footer a:not(.acceptall):active:after,
+  section.cookies div.footer a:not(.acceptall):visited:after,
+  section.cookies footer a:not(.acceptall):after,
+  section.cookies footer a:not(.acceptall):focus:after,
+  section.cookies footer a:not(.acceptall):active:after,
+  section.cookies footer a:not(.acceptall):visited:after {
+    right: -5px;
+  }
+}
+section.cookies div.footer a:not(.acceptall):last-of-type,
+section.cookies div.footer a:not(.acceptall):focus:last-of-type,
+section.cookies div.footer a:not(.acceptall):active:last-of-type,
+section.cookies div.footer a:not(.acceptall):visited:last-of-type,
+section.cookies footer a:not(.acceptall):last-of-type,
+section.cookies footer a:not(.acceptall):focus:last-of-type,
+section.cookies footer a:not(.acceptall):active:last-of-type,
+section.cookies footer a:not(.acceptall):visited:last-of-type {
+  margin: auto auto auto 0;
+  text-align: left;
+}
+section.cookies div.footer a:not(.acceptall):last-of-type:after,
+section.cookies div.footer a:not(.acceptall):focus:last-of-type:after,
+section.cookies div.footer a:not(.acceptall):active:last-of-type:after,
+section.cookies div.footer a:not(.acceptall):visited:last-of-type:after,
+section.cookies footer a:not(.acceptall):last-of-type:after,
+section.cookies footer a:not(.acceptall):focus:last-of-type:after,
+section.cookies footer a:not(.acceptall):active:last-of-type:after,
+section.cookies footer a:not(.acceptall):visited:last-of-type:after {
+  display: none;
+}
+@media (hover: hover) {
+  section.cookies div.footer a:not(.acceptall):hover,
+  section.cookies div.footer a:not(.acceptall):focus:hover,
+  section.cookies div.footer a:not(.acceptall):active:hover,
+  section.cookies div.footer a:not(.acceptall):visited:hover,
+  section.cookies footer a:not(.acceptall):hover,
+  section.cookies footer a:not(.acceptall):focus:hover,
+  section.cookies footer a:not(.acceptall):active:hover,
+  section.cookies footer a:not(.acceptall):visited:hover {
+    opacity: 0.5;
+  }
+}
+@media (max-width: 800px) {
+  section.cookies div.footer a:not(.acceptall),
+  section.cookies div.footer a:not(.acceptall):focus,
+  section.cookies div.footer a:not(.acceptall):active,
+  section.cookies div.footer a:not(.acceptall):visited,
+  section.cookies footer a:not(.acceptall),
+  section.cookies footer a:not(.acceptall):focus,
+  section.cookies footer a:not(.acceptall):active,
+  section.cookies footer a:not(.acceptall):visited {
+    justify-content: center;
+    align-content: center;
+    margin: 0 0 0 5px !important;
+    width: calc(50% - 5px);
+  }
+  section.cookies div.footer a:not(.acceptall):nth-child(odd),
+  section.cookies div.footer a:not(.acceptall):focus:nth-child(odd),
+  section.cookies div.footer a:not(.acceptall):active:nth-child(odd),
+  section.cookies div.footer a:not(.acceptall):visited:nth-child(odd),
+  section.cookies footer a:not(.acceptall):nth-child(odd),
+  section.cookies footer a:not(.acceptall):focus:nth-child(odd),
+  section.cookies footer a:not(.acceptall):active:nth-child(odd),
+  section.cookies footer a:not(.acceptall):visited:nth-child(odd) {
+    margin: 0 5px 0 0 !important;
+  }
+}
+@media (max-width: 800px) {
+  section.cookies div.footer,
+  section.cookies footer {
+    flex-flow: row wrap;
+  }
+}
+@media (max-width: 767px) {
+  section.cookies div.footer,
+  section.cookies footer {
+    padding: 20px 0 10px 0;
+  }
+}
+section.cookies.settings {
+  display: none;
+}
+
+button.cookies:not(.inline),
+button.cookies:not(.inline):focus,
+button.cookies:not(.inline):active,
+button.cookies:not(.inline):visited {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: background-color, color;
+  -moz-transition-property: background-color, color;
+  -o-transition-property: background-color, color;
+  -webkit-transition-property: background-color, color;
+  padding: 20px;
+  margin: 40px auto 0 auto;
+  position: relative;
+  float: left;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  min-width: 60px;
+  text-align: right;
+  width: calc(100% - 160px);
+  color: #0f1012;
+  pointer-events: all;
+  z-index: 90;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  background: rgb(49, 49, 49);
+  background: -moz-radial-gradient(circle, rgba(49, 49, 49, 0.05) 0%, rgba(49, 49, 49, 0) 90%);
+  background: -webkit-radial-gradient(circle, rgba(49, 49, 49, 0.05) 0%, rgba(49, 49, 49, 0) 90%);
+  background: radial-gradient(circle, rgba(49, 49, 49, 0.05) 0%, rgba(49, 49, 49, 0) 90%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#494949",endColorstr="#494949",GradientType=1);
+}
+button.cookies:not(.inline) svg,
+button.cookies:not(.inline):focus svg,
+button.cookies:not(.inline):active svg,
+button.cookies:not(.inline):visited svg {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: fill;
+  -moz-transition-property: fill;
+  -o-transition-property: fill;
+  -webkit-transition-property: fill;
+  width: 20px;
+  height: 20px;
+  fill: #0f1012;
+  margin: auto 0;
+  padding: 0;
+}
+button.cookies:not(.inline) span,
+button.cookies:not(.inline):focus span,
+button.cookies:not(.inline):active span,
+button.cookies:not(.inline):visited span {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: auto 0 auto 10px;
+}
+@media (hover: hover) {
+  button.cookies:not(.inline):hover,
+  button.cookies:not(.inline):focus:hover,
+  button.cookies:not(.inline):active:hover,
+  button.cookies:not(.inline):visited:hover {
+    background-color: rgba(33, 37, 41, 0.1);
+  }
+}
+
+div.cookiemsg {
+  padding: 30px;
+  margin: 0;
+  position: relative;
+  float: left;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 40px;
+  background-color: rgba(33, 37, 41, 0.1);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  min-width: 60px;
+  text-align: left;
+  width: 100%;
+  color: #0f1012;
+  pointer-events: all;
+  z-index: 90;
+  border-radius: 10px;
+}
+div.cookiemsg p {
+  padding-right: 0;
+}
+div.cookiemsg p.title,
+div.cookiemsg h3 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  font-size: 30px;
+  line-height: 40px;
+  color: inherit;
+  font-weight: 300;
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+div.cookiemsg p.title svg,
+div.cookiemsg h3 svg {
+  width: 30px;
+  height: 30px;
+  fill: #0f1012;
+  margin: auto 10px auto 0;
+  padding: 2px 0;
+}
+div.cookiemsg button,
+div.cookiemsg button:focus,
+div.cookiemsg button:active,
+div.cookiemsg button:visited {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: background-color, border;
+  -moz-transition-property: background-color, border;
+  -o-transition-property: background-color, border;
+  -webkit-transition-property: background-color, border;
+  padding: 10px 20px;
+  margin: 0;
+  position: relative;
+  float: right;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  width: auto;
+  text-align: right;
+  top: 0;
+  right: 0;
+  color: #FFFFFF;
+  pointer-events: all;
+  background-color: #0f1012;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  border: none;
+}
+div.cookiemsg button svg,
+div.cookiemsg button:focus svg,
+div.cookiemsg button:active svg,
+div.cookiemsg button:visited svg {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: fill;
+  -moz-transition-property: fill;
+  -o-transition-property: fill;
+  -webkit-transition-property: fill;
+  width: 20px;
+  height: 30px;
+  fill: #FFFFFF;
+  margin: auto 0;
+  padding: 2px 0;
+}
+div.cookiemsg button span,
+div.cookiemsg button:focus span,
+div.cookiemsg button:active span,
+div.cookiemsg button:visited span {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: color;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  color: inherit;
+  margin: auto 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+@media (hover: hover) {
+  div.cookiemsg button:hover,
+  div.cookiemsg button:focus:hover,
+  div.cookiemsg button:active:hover,
+  div.cookiemsg button:visited:hover {
+    background-color: rgba(33, 37, 41, 0.8);
+  }
+  div.cookiemsg button:hover.save,
+  div.cookiemsg button:focus:hover.save,
+  div.cookiemsg button:active:hover.save,
+  div.cookiemsg button:visited:hover.save {
+    background-color: rgba(33, 37, 41, 0.8);
+  }
+}
+
+html.dark button.cookies:not(.inline),
+html.dark button.cookies:not(.inline):focus,
+html.dark button.cookies:not(.inline):active,
+html.dark button.cookies:not(.inline):visited {
+  color: #FFFFFF;
+  background: rgb(246, 230, 211);
+  background: -moz-radial-gradient(circle, rgba(246, 230, 211, 0.05) 0%, rgba(49, 49, 49, 0) 90%);
+  background: -webkit-radial-gradient(circle, rgba(246, 230, 211, 0.05) 0%, rgba(49, 49, 49, 0) 90%);
+  background: radial-gradient(circle, rgba(246, 230, 211, 0.05) 0%, rgba(49, 49, 49, 0) 90%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#494949",endColorstr="#494949",GradientType=1);
+}
+html.dark button.cookies:not(.inline) svg,
+html.dark button.cookies:not(.inline):focus svg,
+html.dark button.cookies:not(.inline):active svg,
+html.dark button.cookies:not(.inline):visited svg {
+  fill: #FFFFFF;
+}
+@media (hover: hover) {
+  html.dark button.cookies:not(.inline):hover,
+  html.dark button.cookies:not(.inline):focus:hover,
+  html.dark button.cookies:not(.inline):active:hover,
+  html.dark button.cookies:not(.inline):visited:hover {
+    background-color: #FFFFFF;
+  }
+}
+
+#slider {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  background-color: var(--slider-bg);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#slider * {
+  color: white;
+}
+#slider picture {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-color: var(--slider-bg-bg);
+}
+#slider picture img {
+  width: 100%;
+  height: 100svh;
+  object-position: center;
+  object-fit: cover;
+  -o-object-position: center;
+  -o-object-fit: cover;
+}
+#slider picture.prev {
+  height: 100%;
+}
+#slider picture.active {
+  z-index: 20;
+  height: 100%;
+}
+#slider picture.preview {
+  height: 10%;
+  z-index: 50;
+}
+#slider .bgimgs {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--slider-bg-bg);
+  z-index: 0;
+}
+#slider .bgimgs picture img {
+  transition: var(--slider-bg-speed) cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: var(--slider-bg-speed) cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: var(--slider-bg-speed) cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: var(--slider-bg-speed) cubic-bezier(0.42, 0, 0.58, 1);
+  transform: scale(1.1);
+  opacity: var(--slider-bg-opacity);
+  filter: blur(var(--slider-bg-blur));
+  object-position: var(--mouse-x) var(--mouse-y);
+}
+#slider .bgimgs picture.active img {
+  transform: scale(1);
+}
+#slider .bgimgs picture.active {
+  transition: var(--slider-bg-speed) cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: var(--slider-bg-speed) cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: var(--slider-bg-speed) cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: var(--slider-bg-speed) cubic-bezier(0.42, 0, 0.58, 1);
+}
+#slider .bgimgs picture.preview {
+  transition: calc(var(--slider-bg-speed) / 2) cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: calc(var(--slider-bg-speed) / 2) cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: calc(var(--slider-bg-speed) / 2) cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: calc(var(--slider-bg-speed) / 2) cubic-bezier(0.42, 0, 0.58, 1);
+}
+#slider .nav {
+  transition: calc(var(--slider-bg-speed) / 2) cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: calc(var(--slider-bg-speed) / 2) cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: calc(var(--slider-bg-speed) / 2) cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: calc(var(--slider-bg-speed) / 2) cubic-bezier(0.42, 0, 0.58, 1);
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  max-width: 850px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: center;
+  padding: 40px;
+}
+#slider .nav button,
+#slider .nav button:active,
+#slider .nav button:focus,
+#slider .nav button:visited {
+  transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  position: relative;
+  width: 80px;
+  min-height: 80px;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: auto 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
+  padding: 0;
+  font-size: 18px;
+  color: white;
+  border-radius: 100%;
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  letter-spacing: 1px;
+  font-weight: 500;
+  box-shadow: 0 0 100px black;
+}
+#slider .nav button svg,
+#slider .nav button:active svg,
+#slider .nav button:focus svg,
+#slider .nav button:visited svg {
+  transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  fill: white;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+}
+#slider .nav button:hover,
+#slider .nav button:active:hover,
+#slider .nav button:focus:hover,
+#slider .nav button:visited:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+#slider .nav.hide {
+  transform: scale(0.98);
+}
+#slider .content {
+  transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  position: relative;
+  margin: auto;
+  width: 90%;
+  max-width: 500px;
+  height: 70vh;
+  max-height: 600px;
+  z-index: 2;
+  box-shadow: 0 0 300px black;
+  overflow: hidden;
+  border-radius: var(--slider-content-radius);
+  background-color: var(--slider-content-bg);
+}
+#slider .content picture img {
+  transition: var(--slider-content-speed) cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: var(--slider-content-speed) cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: var(--slider-content-speed) cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: var(--slider-content-speed) cubic-bezier(0.42, 0, 0.58, 1);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -1.5svh) scale(1.2);
+  opacity: var(--slider-content-opacity);
+  filter: blur(var(--slider-content-blur));
+  height: 70svh;
+  width: 90svw;
+  max-width: 1000px;
+}
+#slider .content section.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-color: transparent;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-content: flex-start;
+  padding-bottom: 40px;
+  pointer-events: none;
+}
+#slider .content section.slide section {
+  transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  position: relative;
+  width: calc(100% - 80px);
+  height: calc(100% - 80px);
+  padding: 0 30px 0 0;
+  opacity: 0;
+  transform: translateY(80px) scale(0.95);
+  overflow: auto;
+  margin: auto auto 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  scrollbar-color: white rgba(0, 0, 0, 0.2);
+  scrollbar-darkshadow-color: transparent;
+  scrollbar-3dlight-color: pink;
+  scrollbar-width: thin;
+}
+#slider .content section.slide section svg {
+  position: relative;
+  min-height: 60px;
+  width: auto;
+  margin: 0 auto 20px 0;
+  fill: white;
+}
+#slider .content section.slide section h2 {
+  margin: auto 0 0 0;
+  font-size: clamp(30px, 9vw, 50px);
+  line-height: clamp(35px, 9.2vw, 50px);
+  width: 100%;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+#slider .content section.slide section p {
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 32px;
+  width: 100%;
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+#slider .content section.slide a,
+#slider .content section.slide a:active,
+#slider .content section.slide a:focus,
+#slider .content section.slide a:visited {
+  transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  position: relative;
+  width: calc(100% - 80px);
+  min-height: 60px;
+  background-color: rgba(255, 255, 255, 0.05);
+  margin: 20px auto 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  text-decoration: none;
+  padding: 10px 20px;
+  opacity: 0;
+  transform: translateY(100px) scale(0.9);
+  font-size: 18px;
+  color: white;
+  border-radius: 10px;
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+#slider .content section.slide a span,
+#slider .content section.slide a:active span,
+#slider .content section.slide a:focus span,
+#slider .content section.slide a:visited span {
+  color: inherit;
+  margin: auto 0;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+#slider .content section.slide a svg,
+#slider .content section.slide a:active svg,
+#slider .content section.slide a:focus svg,
+#slider .content section.slide a:visited svg {
+  transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  fill: white;
+  margin: auto 0 auto 20px;
+}
+#slider .content section.slide a:hover,
+#slider .content section.slide a:active:hover,
+#slider .content section.slide a:focus:hover,
+#slider .content section.slide a:visited:hover {
+  color: black;
+}
+#slider .content section.slide a:hover svg,
+#slider .content section.slide a:active:hover svg,
+#slider .content section.slide a:focus:hover svg,
+#slider .content section.slide a:visited:hover svg {
+  fill: black;
+}
+#slider .content section.slide a:hover,
+#slider .content section.slide a:active:hover,
+#slider .content section.slide a:focus:hover,
+#slider .content section.slide a:visited:hover {
+  background-color: white;
+}
+#slider .content section.slide ul {
+  position: relative;
+  min-height: 60px;
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  padding: 0 40px;
+  gap: 5px;
+  margin: 0 0 30px 0;
+  opacity: 0;
+}
+#slider .content section.slide ul li {
+  margin: 0;
+  width: 100%;
+}
+#slider .content section.slide ul li button,
+#slider .content section.slide ul li button:active,
+#slider .content section.slide ul li button:focus,
+#slider .content section.slide ul li button:visited {
+  transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  position: relative;
+  float: left;
+  width: 100%;
+  background-color: transparent;
+  height: 40px;
+  border: none;
+  appearance: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+#slider .content section.slide ul li button::before,
+#slider .content section.slide ul li button:active::before,
+#slider .content section.slide ul li button:focus::before,
+#slider .content section.slide ul li button:visited::before {
+  transition: 0ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 0ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 0ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 0ms cubic-bezier(0.42, 0, 0.58, 1);
+  position: absolute;
+  content: " ";
+  background-color: white;
+  top: 38px;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  transform-origin: left top;
+  transform: scaleX(0);
+}
+#slider .content section.slide ul li button small,
+#slider .content section.slide ul li button:active small,
+#slider .content section.slide ul li button:focus small,
+#slider .content section.slide ul li button:visited small {
+  transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  white-space: nowrap;
+  left: 0;
+  text-align: left;
+  line-height: 12px;
+  font-size: 10px;
+  margin: 10px 0 0 0;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+}
+#slider .content section.slide ul li button:hover,
+#slider .content section.slide ul li button:active:hover,
+#slider .content section.slide ul li button:focus:hover,
+#slider .content section.slide ul li button:visited:hover {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+}
+#slider .content section.slide ul li button:hover:not(.active) small,
+#slider .content section.slide ul li button:active:hover:not(.active) small,
+#slider .content section.slide ul li button:focus:hover:not(.active) small,
+#slider .content section.slide ul li button:visited:hover:not(.active) small {
+  transform: translateY(0);
+  opacity: 1;
+}
+#slider .content section.slide ul li button.active,
+#slider .content section.slide ul li button:active.active,
+#slider .content section.slide ul li button:focus.active,
+#slider .content section.slide ul li button:visited.active {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+#slider .content section.slide.prev picture {
+  height: 100%;
+}
+#slider .content section.slide.active {
+  pointer-events: all;
+  z-index: 10;
+}
+#slider .content section.slide.active ul {
+  opacity: 1;
+}
+#slider .content section.slide.active a,
+#slider .content section.slide.active a:active,
+#slider .content section.slide.active a:focus,
+#slider .content section.slide.active a:visited,
+#slider .content section.slide.active section {
+  transition-delay: 500ms;
+  -moz-transition-delay: 500ms;
+  -o-transition-delay: 500ms;
+  -webkit-transition-delay: 500ms;
+  opacity: 1;
+  transform: translateY(0);
+}
+#slider .content section.slide.active a:hover,
+#slider .content section.slide.active a:active:hover,
+#slider .content section.slide.active a:focus:hover,
+#slider .content section.slide.active a:visited:hover,
+#slider .content section.slide.active section:hover {
+  transition-delay: 0ms;
+  -moz-transition-delay: 0ms;
+  -o-transition-delay: 0ms;
+  -webkit-transition-delay: 0ms;
+}
+#slider .content section.slide.active picture {
+  transition: var(--slider-content-speed) cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: var(--slider-content-speed) cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: var(--slider-content-speed) cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: var(--slider-content-speed) cubic-bezier(0.42, 0, 0.58, 1);
+  height: 100%;
+}
+#slider .content section.slide.active picture img {
+  transform: translate(-50%, -1.5svh) scale(1.1);
+}
+#slider .content section.slide.preview {
+  z-index: 30;
+}
+#slider .content section.slide.preview picture {
+  transition: calc(var(--slider-content-speed) / 2) cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: calc(var(--slider-content-speed) / 2) cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: calc(var(--slider-content-speed) / 2) cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: calc(var(--slider-content-speed) / 2) cubic-bezier(0.42, 0, 0.58, 1);
+  height: 10px;
+}
+#slider .content section.slide.preview picture img {
+  opacity: 1;
+}
+#slider .content:hover {
+  transform: scale(1.05);
+}
+
+#tabs {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  background-color: var(--slider-bg);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#tabs * {
+  color: white;
+}
+#tabs div[role=tablist] {
+  width: calc(100% - 40px);
+  max-width: 900px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  margin: 0 0 10px 0;
+}
+#tabs div[role=tablist] button {
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: var(--slider-content-radius);
+}
+#tabs div[role=tablist] button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+#tabs div[role=tablist] button[aria-selected=true] {
+  background-color: white;
+  color: #0f1012;
+}
+#tabs div[role=tabpanel] {
+  transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  width: calc(100% - 40px);
+  max-width: 900px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 5px;
+  padding: 0;
+  background-color: white;
+  border-radius: var(--slider-content-radius);
+  margin: 0;
+  overflow: hidden;
+  height: 50vh;
+  box-shadow: 0 0 300px rgba(0, 0, 0, 0.2);
+}
+#tabs div[role=tabpanel] * {
+  color: #0f1012;
+}
+#tabs div[role=tabpanel] p {
+  position: relative;
+  width: 100%;
+  padding: 10px 15px;
+}
+#tabs div[role=tabpanel].display-none {
+  height: 0;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+}
+
+main {
+  position: relative;
+  float: left;
+  width: 100%;
+  z-index: 10;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.temp {
+  color: indianred !important;
+}
+
+* {
+  margin: 0;
+  color: #0f1012;
+}
+
+::-moz-selection { /* Code for Firefox */
+  background: rgba(0, 0, 0, 0.6);
+  color: #FFFFFF;
+}
+
+::selection {
+  background: rgba(0, 0, 0, 0.6);
+  color: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes logo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes loaded {
+  from {
+    top: 120vh;
+  }
+  to {
+    top: 85vh;
+  }
+}
+main {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  position: relative;
+  float: left;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  max-width: 2500px;
+  align-content: flex-start;
+  margin: 0 auto;
+}
+main > picture {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 70vh;
+  min-height: 500px;
+  max-height: 1500px;
+  overflow: hidden;
+  z-index: 10;
+}
+main > picture img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  -o-object-fit: cover;
+  -o-object-position: center;
+}
+main header {
+  position: relative;
+  float: left;
+  width: 100%;
+  z-index: 300;
+  padding: clamp(40px, 6vw, 200px) 0 clamp(80px, 5vw, 200px) 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-content: center;
+  margin: 0 auto;
+  color: #FFFFFF;
+}
+main header div.container {
+  padding: 0 20px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  z-index: 20;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1500px;
+  color: #FFFFFF;
+  text-align: center;
+}
+main header div.container h1 {
+  position: relative;
+  float: left;
+  width: 100%;
+  color: inherit;
+  font-size: clamp(60px, 7vw, 200px);
+  line-height: clamp(100px, 7vw, 200px);
+  text-align: inherit;
+  margin: 0;
+  padding: 0 0 clamp(80px, 5vw, 200px) 0;
+  font-weight: 300;
+}
+main header div.container h2 {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: color;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  position: relative;
+  float: left;
+  width: 100%;
+  color: inherit;
+  font-size: clamp(25px, 1vw, 40px);
+  line-height: clamp(30px, 2vw, 40px);
+  text-align: inherit;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  color: rgb(161, 196, 253);
+}
+main header div.container h3 {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: color, border;
+  -moz-transition-property: color, border;
+  -o-transition-property: color, border;
+  -webkit-transition-property: color, border;
+  position: relative;
+  float: left;
+  width: 100%;
+  color: inherit;
+  font-size: clamp(25px, 2vw, 30px);
+  line-height: clamp(30px, 2vw, 35px);
+  text-align: inherit;
+  margin: 0;
+  padding: clamp(15px, 0.5vw, 30px) 0;
+  font-weight: 400;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: center;
+}
+main header div.container h3 small {
+  font-weight: 600;
+  color: inherit;
+  font-size: clamp(12px, 0.75vw, 16px);
+  line-height: clamp(14px, 1vw, 20px);
+  white-space: nowrap;
+}
+main header div.container h3 img {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: clamp(25px, 2vw, 30px);
+  height: clamp(25px, 2vw, 30px);
+  object-position: center;
+  object-fit: cover;
+  -o-object-position: center;
+  -o-object-fit: cover;
+  margin: auto 10px auto 0;
+  border: 2px solid #0f1012;
+}
+main header div.container h4 {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: color, border;
+  -moz-transition-property: color, border;
+  -o-transition-property: color, border;
+  -webkit-transition-property: color, border;
+  position: relative;
+  float: left;
+  width: 100%;
+  color: inherit;
+  font-size: clamp(14px, 1vw, 16px);
+  line-height: clamp(25px, 2vw, 30px);
+  text-align: inherit;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: center;
+  text-transform: uppercase;
+}
+main header div.container ul, main header div.container li,
+main header div.container p {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: color, background-color, border;
+  -moz-transition-property: color, background-color, border;
+  -o-transition-property: color, background-color, border;
+  -webkit-transition-property: color, background-color, border;
+  position: relative;
+  float: left;
+  width: 100%;
+  color: inherit;
+  font-size: clamp(16px, 1vw, 18px);
+  line-height: clamp(25px, 2vw, 30px);
+  text-align: inherit;
+  margin: 0 auto;
+  padding: 0;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  max-width: 800px;
+}
+main header div.container ul strong, main header div.container li strong,
+main header div.container p strong {
+  font-size: clamp(40px, 2.5vw, 60px);
+  line-height: clamp(40px, 2.5vw, 60px);
+  font-weight: 400;
+  color: inherit;
+}
+main header div.container ul small, main header div.container li small,
+main header div.container p small {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  color: inherit;
+  width: auto;
+  margin: auto 0 0 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+main header div.container ul small span, main header div.container li small span,
+main header div.container p small span {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: background-color, color;
+  -moz-transition-property: background-color, color;
+  -o-transition-property: background-color, color;
+  -webkit-transition-property: background-color, color;
+  background-color: rgb(161, 196, 253);
+  border-radius: 200px;
+  padding: 5px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  margin: auto 5px auto 10px;
+}
+main header div.container ul small del, main header div.container li small del,
+main header div.container p small del {
+  color: inherit;
+}
+main header div.container ul em, main header div.container li em,
+main header div.container p em {
+  color: inherit;
+  font-weight: 200;
+  font-style: italic;
+}
+main header div.container ul img, main header div.container li img,
+main header div.container p img {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: clamp(25px, 2vw, 30px);
+  height: clamp(25px, 2vw, 30px);
+  object-position: center;
+  object-fit: cover;
+  -o-object-position: center;
+  -o-object-fit: cover;
+  margin: auto 10px auto 0;
+  border: 1px solid #0f1012;
+}
+main header div.container ul:has(img), main header div.container li:has(img),
+main header div.container p:has(img) {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: center;
+}
+main header div.container ul.price, main header div.container li.price,
+main header div.container p.price {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin: clamp(15px, 0.5vw, 30px) 0 0 0;
+  padding: 0 0 clamp(15px, 0.5vw, 30px) 0;
+  gap: 5px;
+  border-bottom: 1px solid rgba(161, 196, 253, 0.2);
+}
+main header div.container ul.tag, main header div.container li.tag,
+main header div.container p.tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+  background-color: rgb(161, 196, 253);
+  border-radius: 0 0 0 20px;
+  padding: clamp(10px, 0.5vw, 20px) clamp(15px, 0.5vw, 30px);
+  color: #0f1012;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+main header div.container > p {
+  margin: 0 auto clamp(80px, 5vw, 200px) auto;
+}
+main header div.container ul {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  list-style: none;
+  gap: 5px;
+  font-size: clamp(16px, 0.5vw, 18px);
+  line-height: clamp(25px, 2vw, 30px);
+  margin-bottom: clamp(16px, 0.5vw, 18px);
+}
+main header div.container ul li {
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: clamp(16px, 0.5vw, 18px);
+  line-height: clamp(25px, 2vw, 30px);
+}
+main header div.container ul.pagamento {
+  border: 1px solid rgba(161, 196, 253, 0.4);
+  border-radius: 35px;
+  background-color: rgba(15, 16, 18, 0.1);
+  flex-flow: row wrap;
+  width: auto;
+  padding: 10px;
+  gap: 10px;
+  margin: 0 auto clamp(40px, 2.5vw, 100px) auto;
+}
+main header div.container ul.pagamento li {
+  width: auto;
+  margin: 0;
+}
+main header div.container ul.pagamento li p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: clamp(15px, 0.5vw, 30px) 10px clamp(15px, 0.5vw, 30px) clamp(30px, 1vw, 36px);
+}
+main header div.container ul.pagamento li button,
+main header div.container ul.pagamento li button:focus,
+main header div.container ul.pagamento li button:active,
+main header div.container ul.pagamento li button:visited {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: background-color;
+  -moz-transition-property: background-color;
+  -o-transition-property: background-color;
+  -webkit-transition-property: background-color;
+  border-radius: 100px;
+  color: inherit;
+  background-color: transparent;
+  padding: clamp(15px, 0.5vw, 30px);
+  overflow: hidden;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: clamp(15px, 0.5vw, 30px);
+}
+main header div.container ul.pagamento li button:before,
+main header div.container ul.pagamento li button:focus:before,
+main header div.container ul.pagamento li button:active:before,
+main header div.container ul.pagamento li button:visited:before {
+  border-radius: 100px;
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: block;
+  content: " ";
+  background: -webkit-linear-gradient(180deg, rgb(194, 233, 251) 0%, rgb(161, 196, 253) 100%);
+  background: -moz-linear-gradient(180deg, rgb(194, 233, 251) 0%, rgb(161, 196, 253) 100%);
+  background: linear-gradient(180deg, rgb(194, 233, 251) 0%, rgb(161, 196, 253) 100%);
+  opacity: 0.2;
+}
+@media (hover: hover) {
+  main header div.container ul.pagamento li button:hover,
+  main header div.container ul.pagamento li button:focus:hover,
+  main header div.container ul.pagamento li button:active:hover,
+  main header div.container ul.pagamento li button:visited:hover {
+    background-color: rgba(161, 196, 253, 0.05);
+  }
+}
+main header div.container ul.pagamento li button.active,
+main header div.container ul.pagamento li button:focus.active,
+main header div.container ul.pagamento li button:active.active,
+main header div.container ul.pagamento li button:visited.active {
+  background-color: rgba(161, 196, 253, 0.05);
+}
+main header div.container ul.pagamento li button.active:before,
+main header div.container ul.pagamento li button:focus.active:before,
+main header div.container ul.pagamento li button:active.active:before,
+main header div.container ul.pagamento li button:visited.active:before {
+  opacity: 1;
+}
+@media (max-width: 850px) {
+  main header div.container ul.pagamento li {
+    width: calc(50% - 5px);
+  }
+  main header div.container ul.pagamento li p {
+    padding: 5px clamp(15px, 0.5vw, 30px) 0 clamp(15px, 0.5vw, 30px);
+  }
+  main header div.container ul.pagamento li button,
+  main header div.container ul.pagamento li button:focus,
+  main header div.container ul.pagamento li button:active,
+  main header div.container ul.pagamento li button:visited {
+    width: 100%;
+  }
+  main header div.container ul.pagamento li:first-child {
+    width: 100%;
+    text-align: left;
+  }
+}
+@media (max-width: 850px) {
+  main header div.container ul.pagamento li {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  main header div.container ul.pagamento {
+    justify-content: center;
+  }
+}
+main header div.container section.cta {
+  position: relative;
+  width: 100%;
+  margin: clamp(80px, 5vw, 200px) auto 0 auto;
+  border-radius: 20px;
+  padding: clamp(60px, 4vw, 80px);
+  overflow: hidden;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  gap: clamp(30px, 2vw, 60px) clamp(15px, 1vw, 30px);
+  color: #0f1012;
+}
+main header div.container section.cta:before {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: " ";
+  background: -webkit-linear-gradient(180deg, rgb(194, 233, 251) 0%, rgb(161, 196, 253) 100%);
+  background: -moz-linear-gradient(180deg, rgb(194, 233, 251) 0%, rgb(161, 196, 253) 100%);
+  background: linear-gradient(180deg, rgb(194, 233, 251) 0%, rgb(161, 196, 253) 100%);
+  opacity: 1;
+}
+main header div.container section.cta h2 {
+  color: #0f1012;
+}
+main header div.container section.cta p {
+  max-width: 100%;
+  padding: 0 clamp(0px, 10vw, 200px);
+  margin: 0 auto;
+}
+main header div.container section.cta a,
+main header div.container section.cta a:focus,
+main header div.container section.cta a:active,
+main header div.container section.cta a:visited {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: background-color, border, color;
+  -moz-transition-property: background-color, border, color;
+  -o-transition-property: background-color, border, color;
+  -webkit-transition-property: background-color, border, color;
+  position: relative;
+  width: auto;
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  padding: clamp(10px, 1vw, 15px) clamp(15px, 10vw, 25px);
+  color: inherit;
+  cursor: pointer;
+  border: 1px solid rgba(15, 16, 18, 0.4);
+  text-decoration: none;
+  border-radius: 35px;
+}
+main header div.container section.cta a.primary,
+main header div.container section.cta a:focus.primary,
+main header div.container section.cta a:active.primary,
+main header div.container section.cta a:visited.primary {
+  background-color: #0f1012;
+  color: #FFFFFF;
+}
+@media (hover: hover) {
+  main header div.container section.cta a:hover,
+  main header div.container section.cta a:focus:hover,
+  main header div.container section.cta a:active:hover,
+  main header div.container section.cta a:visited:hover {
+    background-color: rgba(15, 16, 18, 0.1);
+  }
+  main header div.container section.cta a:hover.primary,
+  main header div.container section.cta a:focus:hover.primary,
+  main header div.container section.cta a:active:hover.primary,
+  main header div.container section.cta a:visited:hover.primary {
+    background-color: rgba(15, 16, 18, 0.8);
+  }
+}
+main header div.container section.faqs {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: clamp(80px, 5vw, 200px) auto 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  text-align: left;
+  padding: 0;
+}
+main header div.container section.faqs ul {
+  position: relative;
+  float: left;
+  max-width: 100%;
+  margin: clamp(30px, 2vw, 40px) 0 0 0;
+  gap: 0;
+}
+main header div.container section.faqs ul li {
+  max-width: 100%;
+  border-bottom: 1px solid rgba(161, 196, 253, 0.4);
+}
+main header div.container section.faqs ul li button,
+main header div.container section.faqs ul li button:focus,
+main header div.container section.faqs ul li button:active,
+main header div.container section.faqs ul li button:visited {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: background-color, border;
+  -moz-transition-property: background-color, border;
+  -o-transition-property: background-color, border;
+  -webkit-transition-property: background-color, border;
+  position: relative;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  padding: clamp(15px, 1vw, 20px);
+  color: #FFFFFF;
+  cursor: pointer;
+  border-left: 2px solid transparent;
+}
+main header div.container section.faqs ul li button svg,
+main header div.container section.faqs ul li button:focus svg,
+main header div.container section.faqs ul li button:active svg,
+main header div.container section.faqs ul li button:visited svg {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: transform;
+  -moz-transition-property: transform;
+  -o-transition-property: transform;
+  -webkit-transition-property: transform;
+  margin: auto 0;
+  fill: #FFFFFF;
+}
+main header div.container section.faqs ul li button h3,
+main header div.container section.faqs ul li button:focus h3,
+main header div.container section.faqs ul li button:active h3,
+main header div.container section.faqs ul li button:visited h3 {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: color, border;
+  -moz-transition-property: color, border;
+  -o-transition-property: color, border;
+  -webkit-transition-property: color, border;
+  position: relative;
+  float: left;
+  width: 100%;
+  color: inherit;
+  font-size: clamp(14px, 1vw, 16px);
+  line-height: clamp(25px, 2vw, 30px);
+  text-align: inherit;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: center;
+  border: none;
+}
+@media (hover: hover) {
+  main header div.container section.faqs ul li button:hover,
+  main header div.container section.faqs ul li button:focus:hover,
+  main header div.container section.faqs ul li button:active:hover,
+  main header div.container section.faqs ul li button:visited:hover {
+    background-color: rgba(15, 16, 18, 0.3);
+  }
+}
+main header div.container section.faqs ul li button.active,
+main header div.container section.faqs ul li button:focus.active,
+main header div.container section.faqs ul li button:active.active,
+main header div.container section.faqs ul li button:visited.active {
+  border-left: 2px solid rgb(161, 196, 253);
+  color: rgb(161, 196, 253);
+  background-color: rgba(15, 16, 18, 0.6);
+}
+main header div.container section.faqs ul li button.active svg,
+main header div.container section.faqs ul li button:focus.active svg,
+main header div.container section.faqs ul li button:active.active svg,
+main header div.container section.faqs ul li button:visited.active svg {
+  fill: rgb(161, 196, 253);
+  transform: rotate(45deg);
+}
+@media (max-width: 1500px) {
+  main header div.container {
+    padding: 30px 50px;
+  }
+}
+@media (max-width: 500px) {
+  main header div.container {
+    padding: 30px;
+  }
+}
+
+section.plans {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  gap: 30px;
+  padding: 0;
+  overflow: auto;
+}
+section.plans article {
+  position: relative;
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: border;
+  -moz-transition-property: border;
+  -o-transition-property: border;
+  -webkit-transition-property: border;
+  border: 1px solid rgba(161, 196, 253, 0.4);
+  border-radius: 20px;
+  width: 100%;
+  padding: clamp(30px, 2vw, 40px);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  color: #FFFFFF;
+  text-align: left;
+  background-color: rgba(15, 16, 18, 0.3);
+  overflow: hidden;
+}
+section.plans article > p:not(.price, .tag) {
+  font-size: clamp(14px, 1vw, 16px);
+  line-height: clamp(20px, 1.5vw, 25px);
+  margin: clamp(15px, 0.5vw, 30px) auto 20px auto;
+}
+section.plans article a,
+section.plans article a:focus,
+section.plans article a:active,
+section.plans article a:visited,
+section.plans article button,
+section.plans article button:focus,
+section.plans article button:active,
+section.plans article button:visited {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: background-color, border, color;
+  -moz-transition-property: background-color, border, color;
+  -o-transition-property: background-color, border, color;
+  -webkit-transition-property: background-color, border, color;
+  position: relative;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: clamp(10px, 1vw, 15px) clamp(15px, 10vw, 25px);
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: auto 0 0 0;
+  font-size: clamp(16px, 1vw, 18px);
+  line-height: clamp(25px, 1.5vw, 25px);
+  background-color: rgba(15, 16, 18, 0.2);
+  color: rgb(161, 196, 253);
+  border: 1px solid rgb(161, 196, 253);
+}
+section.plans article a.primary,
+section.plans article a:focus.primary,
+section.plans article a:active.primary,
+section.plans article a:visited.primary,
+section.plans article button.primary,
+section.plans article button:focus.primary,
+section.plans article button:active.primary,
+section.plans article button:visited.primary {
+  background-color: rgb(161, 196, 253);
+  color: #0f1012;
+  border: 1px solid rgb(161, 196, 253);
+}
+section.plans article a:not(:last-of-type),
+section.plans article a:focus:not(:last-of-type),
+section.plans article a:active:not(:last-of-type),
+section.plans article a:visited:not(:last-of-type),
+section.plans article button:not(:last-of-type),
+section.plans article button:focus:not(:last-of-type),
+section.plans article button:active:not(:last-of-type),
+section.plans article button:visited:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+section.plans article a:not(:nth-of-type(1)),
+section.plans article a:focus:not(:nth-of-type(1)),
+section.plans article a:active:not(:nth-of-type(1)),
+section.plans article a:visited:not(:nth-of-type(1)),
+section.plans article button:not(:nth-of-type(1)),
+section.plans article button:focus:not(:nth-of-type(1)),
+section.plans article button:active:not(:nth-of-type(1)),
+section.plans article button:visited:not(:nth-of-type(1)) {
+  margin-top: 0;
+}
+@media (hover: hover) {
+  section.plans article a:hover,
+  section.plans article a:focus:hover,
+  section.plans article a:active:hover,
+  section.plans article a:visited:hover,
+  section.plans article button:hover,
+  section.plans article button:focus:hover,
+  section.plans article button:active:hover,
+  section.plans article button:visited:hover {
+    background-color: rgba(15, 16, 18, 0.2) !important;
+  }
+  section.plans article a:hover.primary,
+  section.plans article a:focus:hover.primary,
+  section.plans article a:active:hover.primary,
+  section.plans article a:visited:hover.primary,
+  section.plans article button:hover.primary,
+  section.plans article button:focus:hover.primary,
+  section.plans article button:active:hover.primary,
+  section.plans article button:visited:hover.primary {
+    background-color: rgba(15, 16, 18, 0.8) !important;
+  }
+}
+section.plans article ul li {
+  gap: 5px;
+}
+section.plans article ul li svg {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: fill;
+  -moz-transition-property: fill;
+  -o-transition-property: fill;
+  -webkit-transition-property: fill;
+  min-width: clamp(25px, 2vw, 30px);
+  min-height: clamp(25px, 2vw, 30px);
+  padding: 5px;
+  position: relative;
+  display: inline-block;
+  fill: #FFFFFF;
+}
+section.plans article:before {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: " ";
+  background: -webkit-linear-gradient(180deg, rgb(194, 233, 251) 0%, rgb(161, 196, 253) 100%);
+  background: -moz-linear-gradient(180deg, rgb(194, 233, 251) 0%, rgb(161, 196, 253) 100%);
+  background: linear-gradient(180deg, rgb(194, 233, 251) 0%, rgb(161, 196, 253) 100%);
+  opacity: 0;
+}
+section.plans article.popular {
+  border: 2px solid #a1c4fd;
+}
+@media (hover: hover) {
+  section.plans article:hover {
+    border: 1px solid rgba(161, 196, 253, 0.6);
+  }
+  section.plans article:hover h2, section.plans article:hover h3, section.plans article:hover h4, section.plans article:hover p, section.plans article:hover li {
+    color: #0f1012;
+  }
+  section.plans article:hover svg {
+    fill: #0f1012;
+  }
+  section.plans article:hover p span {
+    color: rgb(161, 196, 253);
+    background-color: #0f1012;
+  }
+  section.plans article:hover p.price {
+    border-bottom: 1px solid rgba(15, 16, 18, 0.2);
+  }
+  section.plans article:hover:before {
+    opacity: 1;
+  }
+  section.plans article:hover.popular {
+    border: 2px solid #a1c4fd;
+  }
+  section.plans article:hover.popular p.tag {
+    color: #FFFFFF !important;
+    background-color: #0f1012 !important;
+  }
+  section.plans article:hover a,
+  section.plans article:hover a:focus,
+  section.plans article:hover a:active,
+  section.plans article:hover a:visited,
+  section.plans article:hover button,
+  section.plans article:hover button:focus,
+  section.plans article:hover button:active,
+  section.plans article:hover button:visited {
+    border: 1px solid #0f1012;
+    color: #0f1012;
+    background-color: transparent;
+  }
+  section.plans article:hover a.primary,
+  section.plans article:hover a:focus.primary,
+  section.plans article:hover a:active.primary,
+  section.plans article:hover a:visited.primary,
+  section.plans article:hover button.primary,
+  section.plans article:hover button:focus.primary,
+  section.plans article:hover button:active.primary,
+  section.plans article:hover button:visited.primary {
+    background-color: #0f1012;
+    color: #FFFFFF;
+    border: 1px solid #0f1012;
+  }
+}
+@media (max-width: 1250px) {
+  section.plans article {
+    width: calc(50% - 15px);
+  }
+}
+@media (max-width: 767px) {
+  section.plans article {
+    width: 100%;
+  }
+}
+@media (max-width: 1250px) {
+  section.plans {
+    flex-flow: row wrap;
+  }
+}
+@media (max-width: 767px) {
+  section.plans {
+    flex-flow: column nowrap;
+  }
+}
+
+table.details {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: clamp(80px, 5vw, 200px) auto 0 auto;
+  text-align: left;
+  color: #FFFFFF;
+}
+table.details thead {
+  position: sticky;
+  top: 0;
+  text-align: center;
+  z-index: 200;
+}
+table.details thead tr th {
+  position: relative;
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: color, border;
+  -moz-transition-property: color, border;
+  -o-transition-property: color, border;
+  -webkit-transition-property: color, border;
+  font-size: clamp(18px, 1.5vw, 40px);
+  line-height: clamp(30px, 2vw, 40px);
+  text-align: inherit;
+  font-weight: 400;
+  color: rgb(161, 196, 253);
+  padding: clamp(15px, 1vw, 20px);
+  width: 20%;
+  border-top: 2px solid rgba(161, 196, 253, 0.4);
+  border-right: 1px solid rgba(161, 196, 253, 0.4);
+  border-left: 1px solid rgba(161, 196, 253, 0.4);
+  background-color: #0f1012;
+}
+table.details thead tr th.active {
+  border-top: 2px solid #a1c4fd;
+  border-right: 1px solid #a1c4fd;
+  border-left: 1px solid #a1c4fd;
+}
+table.details thead tr th p.tag {
+  top: auto;
+  right: -1px;
+  bottom: 100%;
+  width: calc(100% + 2px);
+  border-radius: 20px 20px 0 0;
+}
+table.details thead tr th:first-of-type {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  width: 40%;
+  background-color: transparent;
+}
+table.details thead tr th:nth-child(2) {
+  border-radius: 20px 0 0 0;
+  border-left: 1px solid rgba(161, 196, 253, 0.4);
+}
+table.details thead tr th:nth-child(2).active {
+  border-left: 1px solid #a1c4fd;
+}
+table.details thead tr th:last-of-type {
+  border-radius: 0 20px 0 0;
+}
+table.details tbody tr {
+  border: 1px solid rgba(161, 196, 253, 0.4);
+  border-radius: 20px;
+}
+table.details tbody tr td {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: background-color, border;
+  -moz-transition-property: background-color, border;
+  -o-transition-property: background-color, border;
+  -webkit-transition-property: background-color, border;
+  text-align: center;
+  background-color: rgba(15, 16, 18, 0.6);
+  width: 20%;
+  border-top: 1px solid rgba(161, 196, 253, 0.4);
+  border-right: 1px solid rgba(161, 196, 253, 0.4);
+  border-left: 1px solid rgba(161, 196, 253, 0.4);
+  padding: clamp(15px, 1vw, 20px);
+  color: #FFFFFF;
+  font-size: clamp(16px, 1vw, 18px);
+  line-height: clamp(25px, 2vw, 30px);
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  vertical-align: middle;
+}
+table.details tbody tr td svg {
+  display: table-row;
+  margin: auto;
+  fill: #FFFFFF;
+  border-radius: 100%;
+  background-color: rgba(15, 16, 18, 0.8);
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+}
+table.details tbody tr td button,
+table.details tbody tr td button:focus,
+table.details tbody tr td button:active,
+table.details tbody tr td button:visited {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: background-color;
+  -moz-transition-property: background-color;
+  -o-transition-property: background-color;
+  -webkit-transition-property: background-color;
+  position: relative;
+  width: 100%;
+  background-color: rgba(15, 16, 18, 0.6);
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  padding: clamp(15px, 1vw, 20px);
+  color: #FFFFFF;
+  cursor: pointer;
+  gap: 10px;
+}
+table.details tbody tr td button svg,
+table.details tbody tr td button:focus svg,
+table.details tbody tr td button:active svg,
+table.details tbody tr td button:visited svg {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: transform;
+  -moz-transition-property: transform;
+  -o-transition-property: transform;
+  -webkit-transition-property: transform;
+  margin: auto 0;
+  fill: #FFFFFF;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+}
+table.details tbody tr td button h4,
+table.details tbody tr td button:focus h4,
+table.details tbody tr td button:active h4,
+table.details tbody tr td button:visited h4 {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: color, border;
+  -moz-transition-property: color, border;
+  -o-transition-property: color, border;
+  -webkit-transition-property: color, border;
+  position: relative;
+  float: left;
+  width: 100%;
+  color: inherit;
+  font-size: clamp(14px, 1vw, 16px);
+  line-height: clamp(25px, 2vw, 30px);
+  text-align: inherit;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: center;
+  text-transform: uppercase;
+}
+@media (hover: hover) {
+  table.details tbody tr td button:hover,
+  table.details tbody tr td button:focus:hover,
+  table.details tbody tr td button:active:hover,
+  table.details tbody tr td button:visited:hover {
+    background-color: rgba(161, 196, 253, 0.1);
+  }
+}
+table.details tbody tr td button.active,
+table.details tbody tr td button:focus.active,
+table.details tbody tr td button:active.active,
+table.details tbody tr td button:visited.active {
+  color: rgb(161, 196, 253);
+}
+table.details tbody tr td button.active svg,
+table.details tbody tr td button:focus.active svg,
+table.details tbody tr td button:active.active svg,
+table.details tbody tr td button:visited.active svg {
+  fill: rgb(161, 196, 253);
+  transform: rotate(90deg);
+}
+table.details tbody tr td:has(button) {
+  padding: 0;
+  border-right: 1px solid rgba(161, 196, 253, 0.4) !important;
+  border-left: 1px solid rgba(161, 196, 253, 0.4) !important;
+  border-bottom: 1px solid rgba(161, 196, 253, 0.4) !important;
+}
+table.details tbody tr td:has(svg) {
+  padding: 0;
+}
+table.details tbody tr td.active {
+  border-right: 1px solid #a1c4fd;
+  border-left: 1px solid #a1c4fd;
+  background-color: rgba(161, 196, 253, 0.05);
+}
+table.details tbody tr td:first-of-type {
+  text-align: left;
+  width: 40%;
+  border-left: 1px solid rgba(161, 196, 253, 0.4);
+  border-right: none;
+  background-color: #0f1012;
+}
+table.details tbody tr td:nth-of-type(2) {
+  border-left: 1px solid rgba(161, 196, 253, 0.4);
+}
+table.details tbody tr td:nth-of-type(2).active {
+  border-left: 1px solid #a1c4fd;
+}
+table.details tbody tr:first-child td:first-of-type {
+  overflow: hidden;
+  border-radius: 20px 0 0 0;
+}
+table.details tbody tr:last-child td {
+  border-bottom: 1px solid rgba(161, 196, 253, 0.4);
+}
+table.details tbody tr:last-child td.active {
+  border-bottom: 1px solid #a1c4fd;
+}
+table.details tbody tr:last-child td:first-of-type {
+  border-radius: 0 0 0 20px;
+}
+table.details tbody tr:last-child td:last-of-type {
+  border-radius: 0 0 20px 0;
+}
+
+footer {
+  position: relative;
+  float: left;
+  width: 100%;
+  z-index: 300;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-content: center;
+  color: #FFFFFF;
+}
+footer div.container {
+  padding: clamp(80px, 5vw, 200px) 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  z-index: 20;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1500px;
+  color: #FFFFFF;
+  text-align: center;
+}
+footer div.container p {
+  position: relative;
+  float: left;
+  width: 100%;
+  color: inherit;
+  font-size: clamp(14px, 0.8vw, 16px);
+  line-height: clamp(20px, 1vw, 20px);
+  text-align: inherit;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+footer div.container p em {
+  color: inherit;
+  font-weight: 200;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+footer div.container p strong {
+  color: inherit;
+  font-weight: 500;
+}
+footer div.container p small {
+  color: inherit;
+}
+footer div.container p span {
+  color: inherit;
+}
+footer div.container p span.title {
+  font-weight: 500;
+  font-size: clamp(18px, 3vw, 20px);
+  line-height: clamp(20px, 3vw, 20px);
+}
+footer div.container p.copyright {
+  font-size: clamp(12px, 0.8vw, 14px);
+  line-height: clamp(20px, 1vw, 20px);
+}
+footer div.container img {
+  position: relative;
+  float: left;
+  height: 40px;
+  margin: 0 auto;
+}
+footer div.container div {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  color: inherit;
+}
+footer div.container ul {
+  position: relative;
+  float: left;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  color: inherit;
+  gap: 10px;
+}
+footer div.container ul li {
+  color: inherit;
+  position: relative;
+  float: left;
+  margin: clamp(10px, 0.5vw, 15px) 0 0 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+footer div.container ul li a,
+footer div.container ul li a:focus,
+footer div.container ul li a:active,
+footer div.container ul li a:visited {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  text-decoration: none;
+  position: relative;
+  margin: 0 auto;
+  font-size: clamp(14px, 0.8vw, 18px);
+  line-height: clamp(25px, 2vw, 30px);
+  width: auto;
+  border-radius: 8px;
+  color: inherit;
+  font-weight: 300;
+  cursor: pointer;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+  letter-spacing: 1px;
+}
+footer div.container ul li a svg,
+footer div.container ul li a:focus svg,
+footer div.container ul li a:active svg,
+footer div.container ul li a:visited svg {
+  margin: auto 0;
+  fill: #FFFFFF;
+  width: 18px;
+}
+footer div.container ul li a span,
+footer div.container ul li a:focus span,
+footer div.container ul li a:active span,
+footer div.container ul li a:visited span {
+  color: inherit;
+}
+@media (hover: hover) {
+  footer div.container ul li a:hover,
+  footer div.container ul li a:focus:hover,
+  footer div.container ul li a:active:hover,
+  footer div.container ul li a:visited:hover {
+    opacity: 0.5;
+  }
+}
+@media (max-width: 1500px) {
+  footer div.container {
+    padding: clamp(80px, 5vw, 200px) 50px;
+  }
+}

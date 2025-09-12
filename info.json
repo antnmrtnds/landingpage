@@ -1,0 +1,258 @@
+{
+  "project":{
+    "id" : "andaragency",
+    "name" : "AndarAgency",
+    "description" : "Fórmula Andar - Aumentar vendas",
+    "lang" : "pt",
+    "show-cta": true,
+    "show-detailed": false
+  },
+  "plans":[
+    {
+      "id": "basic",
+      "title": {
+        "pt": "Básico",
+        "en": "Basic"
+      },
+      "subtitle": {
+        "pt": "Incluí",
+        "en": "Includes"
+      },
+      "description": {
+        "pt": "Garante mais exposição através de um bloco de empresa básico no Portal da AndarAgency, o único portal nacional onde são exibidas as empresas de casas modulares em Portugal.",
+        "en": "Ensure more exposure through a company block on the AndarAgency Portal, the only national website where companies specializing in modular houses in Portugal are displayed."
+      },
+      "popular": false,
+      "price": {
+        "mes": 249,
+        "ano": 2390
+      }
+    },
+    {
+      "id": "pro",
+      "title": {
+        "pt": "Pro",
+        "en": "Pro"
+      },
+      "subtitle": {
+        "pt": "Tudo do Básico, mais",
+        "en": "Everyting in Basic, plus"
+      },
+      "description": {
+        "pt": "Obtém um bloco de empresa completo com toda a informação da empresa. Quanto mais informação, mais exposição. Garantimos resultados concretos e recebes um relatório mensal com insights da performance do posicionamento no website.",
+        "en": "Integer in imperdiet mauris, vel placerat est. Aenean id mattis risus, nec scelerisque est. Aliquam sit amet tortor et dui accumsan aliquet sit amet ac elit. Cras id efficitur mauris."
+      },
+      "popular": true,
+      "price": {
+        "mes": 949,
+        "ano": 9110
+      }
+    },
+    {
+      "id": "andar",
+      "title": {
+        "pt": "Andar",
+        "en": "Andar"
+      },
+      "subtitle": {
+        "pt": "Tudo do Pro, mais",
+        "en": "Everyting in Pro, plus"
+      },
+      "description": {
+        "pt": "Garante exposição máxima. Só compra quem conhece a tua marca. O pacote Andar adiciona ao Pro o componente de redes sociais e relatórios mensais com insights da concorrência.",
+        "en": "Mauris suscipit, lacus non consectetur ornare, neque odio cursus eros, in tempor neque est vitae libero. Fusce molestie faucibus sapien, vel elementum ante. Nullam malesuada finibus nunc, at pulvinar enim semper et."
+      },
+      "popular": false,
+      "price": {
+        "mes": 1749,
+        "ano": 16790
+      }
+    }
+  ],
+  "services": [
+    {
+      "id": "portal",
+      "title": {
+        "pt": "Portal",
+        "en": "Portal"
+      },
+      "services": [
+        {
+          "description": {
+            "pt": "Bloco de empresa com logotipo, nome, link e descrição.",
+            "en": ""
+          },
+          "plans": ["basic","pro","andar"]
+        },
+        {
+          "description": {
+            "pt": "Garantia até 10 leads.",
+            "en": ""
+          },
+          "plans": ["pro","andar"]
+        },
+        {
+          "description": {
+            "pt": "Bloco de empresa completo com toda informação.",
+            "en": ""
+          },
+          "plans": ["pro","andar"]
+        },
+        {
+          "description": {
+            "pt": "Posicionamento aleatório.",
+            "en": ""
+          },
+          "plans": ["pro","andar"]
+        },
+        {
+          "description": {
+            "pt": "Destaque mensal.",
+            "en": ""
+          },
+          "plans": ["pro","andar"]
+        },
+        {
+          "description": {
+            "pt": "Página de empresa dedicada.",
+            "en": ""
+          },
+          "plans": ["pro","andar"]
+        },
+        {
+          "description": {
+            "pt": "Direciona leads da AndarAgency para a tua empresa.",
+            "en": ""
+          },
+          "plans": ["pro","andar"]
+        },
+        {
+          "description": {
+            "pt": "Melhorar ofertas com o acesso aos dados de mercado coletados pela AndarAgency.",
+            "en": ""
+          },
+          "plans": ["andar"]
+        },
+        {
+          "description": {
+            "pt": "Maior número de leads com melhor posicionamento no website da AndarAgency.",
+            "en": ""
+          },
+          "plans": ["andar"]
+        }
+      ]
+    },
+    {
+      "id": "redes",
+      "title": {
+        "pt": "Redes Sociais",
+        "en": "Social Media"
+      },
+      "services": [
+        {
+          "description": {
+            "pt": "Aumentar reconhecimento da tua marca com conteúdo em colaboração com a AndarAgency.",
+            "en": ""
+          },
+          "plans": ["andar"]
+        },
+        {
+          "description": {
+            "pt": "Criação e refinação de plano de conteúdos optimizado para a marca e de perfil online.",
+            "en": ""
+          },
+          "plans": ["andar"]
+        }
+      ]
+    },
+    {
+      "id": "report",
+      "title": {
+        "pt": "Report",
+        "en": "Report"
+      },
+      "services": [
+        {
+          "description": {
+            "pt": "Insights da performace do posicionamento no website todos os meses.",
+            "en": ""
+          },
+          "plans": ["pro","andar"]
+        },
+        {
+          "description": {
+            "pt": "Insights da competição todos os meses.",
+            "en": ""
+          },
+          "plans": ["andar"]
+        },
+        {
+          "description": {
+            "pt": "Briefing mensal follow up e análise de resultados das Redes Sociais.",
+            "en": ""
+          },
+          "plans": ["andar"]
+        }
+      ]
+    }
+  ],
+  "faqs": [],
+  "traducoes": {
+    "seo-title": {
+      "pt": "AndarAgency",
+      "en": "AndarAgency"
+    },
+    "seo-description": {
+      "pt": "Fórmula Andar - Aumentar vendas",
+      "en": "Andar Formula - Boost sales"
+    },
+    "seo-keywords": {
+      "pt": "AndarAgency, Aumentar vendas",
+      "en": "AndarAgency, Boost sales"
+    },
+    "mes": {
+      "pt": "mês",
+      "en": "month"
+    },
+    "ano": {
+      "pt": "ano",
+      "en": "year"
+    },
+    "title": {
+      "pt": "AndarAgency",
+      "en": "AndarAgency"
+    },
+    "subtitle": {
+      "pt": "Fórmula Andar - Aumentar vendas",
+      "en": "Andar Formula - Boost sells"
+    },
+    "intro": {
+      "pt": "<br>Tens muitas leads mas pouca conversão?<br>A Fórmula Andar tem como objetivo transformar a comunicação de empresas de casas modulares - tanto para projetos de escala ou habitações privadas - de forma a gerar interesse na marca e aumentar vendas.",
+      "en": "<br>Tens muitas leads mas pouca conversão?<br>A Fórmula Andar tem como objetivo transformar a comunicação de empresas de casas modulares - tanto para projetos de escala ou habitações privadas - de forma a gerar interesse na marca e aumentar vendas."
+    },
+    "escolha-pagamento": {
+      "pt": "Escolha como deseja pagar:",
+      "en": "Choose how you would like to pay:"
+    },
+    "cobrancas-mensais": {
+      "pt": "Cobranças mensais",
+      "en": "Monthly payments"
+    },
+    "cobranca-anual": {
+      "pt": "Cobrança anual",
+      "en": "Yearly payment"
+    },
+    "popular": {
+      "pt": "Mais Popular",
+      "en": "Most Popular"
+    },
+    "ver-detalhes": {
+      "pt": "Ver detalhes",
+      "en": "See details"
+    },
+    "copyright": {
+      "pt": "<small>* Chamada para rede móvel nacional.</small><br>Copyright © <strong>{{YEAR}} - AndarAgency.</strong>",
+      "en": "<small>* Call to a Portuguese mobile network.</small><br>Copyright © <strong>{{YEAR}} - AndarAgency.</strong>"
+    }
+  }
+}
