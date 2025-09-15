@@ -2,11 +2,10 @@
   "project":{
     "id" : "andaragency",
     "name" : "AndarAgency",
-    "description" : "Fórmula Andar - Aumentar vendas",
+    "description" : "A tua empresa em destaque no portal nº1 das casas modulares em Portugal",
     "lang" : "pt",
-    "show-cta": false,
-    "show-detailed": false,
-    "show-faqs": true
+    "show-cta": true,
+    "show-detailed": false
   },
   "plans":[
     {
@@ -20,13 +19,13 @@
         "en": "Includes"
       },
       "description": {
-        "pt": "Aenean lectus mi, convallis at nulla tristique, euismod sollicitudin leo. Cras at venenatis elit, et aliquam ex. Proin posuere suscipit dignissim. Aliquam aliquam volutpat ipsum, sed ultrices tortor posuere a.",
-        "en": "Aenean lectus mi, convallis at nulla tristique, euismod sollicitudin leo. Cras at venenatis elit, et aliquam ex. Proin posuere suscipit dignissim. Aliquam aliquam volutpat ipsum, sed ultrices tortor posuere a."
+        "pt": "Garante mais exposição através de um bloco de empresa básico no Portal da AndarAgency, o único portal nacional onde são exibidas as empresas de casas modulares em Portugal.",
+        "en": "Ensure more exposure through a company block on the AndarAgency Portal, the only national website where companies specializing in modular houses in Portugal are displayed."
       },
       "popular": false,
       "price": {
         "mes": 249,
-        "ano": 2500
+        "ano": 2390
       }
     },
     {
@@ -40,13 +39,13 @@
         "en": "Everyting in Basic, plus"
       },
       "description": {
-        "pt": "Integer in imperdiet mauris, vel placerat est. Aenean id mattis risus, nec scelerisque est. Aliquam sit amet tortor et dui accumsan aliquet sit amet ac elit. Cras id efficitur mauris.",
+        "pt": "Obtém um bloco de empresa completo com toda a informação da empresa. Quanto mais informação, mais exposição. Garantimos resultados concretos e recebes um relatório mensal com insights da performance do posicionamento no website.",
         "en": "Integer in imperdiet mauris, vel placerat est. Aenean id mattis risus, nec scelerisque est. Aliquam sit amet tortor et dui accumsan aliquet sit amet ac elit. Cras id efficitur mauris."
       },
       "popular": true,
       "price": {
         "mes": 949,
-        "ano": 10000
+        "ano": 9110
       }
     },
     {
@@ -60,13 +59,13 @@
         "en": "Everyting in Pro, plus"
       },
       "description": {
-        "pt": "Mauris suscipit, lacus non consectetur ornare, neque odio cursus eros, in tempor neque est vitae libero. Fusce molestie faucibus sapien, vel elementum ante. Nullam malesuada finibus nunc, at pulvinar enim semper et.",
+        "pt": "Garante exposição máxima. Só compra quem conhece a tua marca. O pacote Andar adiciona ao Pro o componente de redes sociais e relatórios mensais com insights da concorrência.",
         "en": "Mauris suscipit, lacus non consectetur ornare, neque odio cursus eros, in tempor neque est vitae libero. Fusce molestie faucibus sapien, vel elementum ante. Nullam malesuada finibus nunc, at pulvinar enim semper et."
       },
       "popular": false,
       "price": {
         "mes": 1749,
-        "ano": 15000
+        "ano": 16790
       }
     }
   ],
@@ -80,67 +79,63 @@
       "services": [
         {
           "description": {
-            "pt": "Bloco de empresa com logotipo, nome, link e descrição",
+            "pt": "Bloco de empresa com logotipo, nome, link e descrição.",
             "en": ""
           },
           "plans": ["basic","pro","andar"]
         },
         {
           "description": {
-            "pt": "Bloco de empresa completo com toda informação",
+            "pt": "Garantia até 10 leads.",
             "en": ""
           },
           "plans": ["pro","andar"]
         },
         {
           "description": {
-            "pt": "Posicionamento aleatório",
+            "pt": "Bloco de empresa completo com toda informação.",
             "en": ""
           },
           "plans": ["pro","andar"]
         },
         {
           "description": {
-            "pt": "Destaque mensal",
-            "en": ""
-          },
-          "info": {
-            "pt": "This is addtional info.",
+            "pt": "Posicionamento aleatório.",
             "en": ""
           },
           "plans": ["pro","andar"]
         },
         {
           "description": {
-            "pt": "Página de empresa dedicada",
+            "pt": "Destaque mensal.",
             "en": ""
           },
           "plans": ["pro","andar"]
         },
         {
           "description": {
-            "pt": "Garantia até 10 leads",
+            "pt": "Página de empresa dedicada.",
             "en": ""
           },
           "plans": ["pro","andar"]
         },
         {
           "description": {
-            "pt": "Direcionar leads da AndarAgency para a tua empresa.",
+            "pt": "Direciona leads da AndarAgency para a tua empresa.",
             "en": ""
           },
           "plans": ["pro","andar"]
         },
         {
           "description": {
-            "pt": "Melhorar ofertas com o acesso aos dados de mercado coletados pela AndarAgency",
+            "pt": "Melhorar ofertas com o acesso aos dados de mercado coletados pela AndarAgency.",
             "en": ""
           },
           "plans": ["andar"]
         },
         {
           "description": {
-            "pt": "Maior número de leads com melhor posicionamento no website da AndarAgency",
+            "pt": "Maior número de leads com melhor posicionamento no website da AndarAgency.",
             "en": ""
           },
           "plans": ["andar"]
@@ -156,7 +151,7 @@
       "services": [
         {
           "description": {
-            "pt": "Aumentar reconhecimento da tua marca com conteúdo em colaboração com a AndarAgency",
+            "pt": "Aumentar reconhecimento da tua marca com conteúdo em colaboração com a AndarAgency.",
             "en": ""
           },
           "plans": ["andar"]
@@ -201,62 +196,19 @@
       ]
     }
   ],
-  "cta":{
-    "title": {
-      "pt": "Incluí",
-      "en": "Includes"
-    },
-    "description": {
-      "pt": "Aenean lectus mi, convallis at nulla tristique, euismod sollicitudin leo. Cras at venenatis elit, et aliquam ex. Proin posuere suscipit dignissim. Aliquam aliquam volutpat ipsum, sed ultrices tortor posuere a.",
-      "en": "Aenean lectus mi, convallis at nulla tristique, euismod sollicitudin leo. Cras at venenatis elit, et aliquam ex. Proin posuere suscipit dignissim. Aliquam aliquam volutpat ipsum, sed ultrices tortor posuere a."
-    },
-    "secondary": {
-      "pt": "Ler mais",
-      "en": "Read more",
-      "link": "index.html",
-      "target": "_blank"
-    },
-    "primary": {
-      "pt": "Entrar em contato",
-      "en": "Get in touch",
-      "link": "index.html",
-      "target": ""
-    }
-  },
-  "faqs": [
-    {
-      "question": {
-        "pt": "Quem é a AndarAgency?",
-        "en": "Who is AndarAgency?"
-      },
-      "answer": {
-        "pt": "<p>Nós recebemos dezenas de leads cada semana, leads que redirecionamos para empresas parceiras. A diferença das nossas leads é que elas olham para a AndarAgency como uma autoridade no setor modular, um setor que é caractrizado por baixos níveis de confiança relativo à construção tradicional.</p>",
-        "en": "<p>Nós recebemos dezenas de leads cada semana, leads que redirecionamos para empresas parceiras. A diferença das nossas leads é que elas olham para a AndarAgency como uma autoridade no setor modular, um setor que é caractrizado por baixos níveis de confiança relativo à construção tradicional.</p>"
-      }
-    },
-    {
-      "question": {
-        "pt": "Quem é a AndarAgency?",
-        "en": "Who is AndarAgency?"
-      },
-      "answer": {
-        "pt": "<p>Nós recebemos dezenas de leads cada semana, leads que redirecionamos para empresas parceiras. A diferença das nossas leads é que elas olham para a AndarAgency como uma autoridade no setor modular, um setor que é caractrizado por baixos níveis de confiança relativo à construção tradicional.</p>",
-        "en": "<p>Nós recebemos dezenas de leads cada semana, leads que redirecionamos para empresas parceiras. A diferença das nossas leads é que elas olham para a AndarAgency como uma autoridade no setor modular, um setor que é caractrizado por baixos níveis de confiança relativo à construção tradicional.</p>"
-      }
-    }
-  ],
+  "faqs": [],
   "traducoes": {
     "seo-title": {
       "pt": "AndarAgency",
       "en": "AndarAgency"
     },
     "seo-description": {
-      "pt": "Fórmula Andar - Aumentar vendas",
-      "en": "Andar Formula - Boost sells"
+      "pt": "A tua empresa em destaque no portal nº1 das casas modulares em Portugal",
+      "en": "Your company highlighted on Portugal's #1 modular homes portal"
     },
     "seo-keywords": {
-      "pt": "AndarAgency, Aumentar vendas",
-      "en": "AndarAgency, Boost sells"
+      "pt": "AndarAgency, casas modulares, portal empresas",
+      "en": "AndarAgency, modular homes, company portal"
     },
     "mes": {
       "pt": "mês",
@@ -271,12 +223,12 @@
       "en": "AndarAgency"
     },
     "subtitle": {
-      "pt": "Fórmula Andar - Aumentar vendas",
-      "en": "Andar Formula - Boost sells"
+      "pt": "A tua empresa em destaque no portal nº1 das casas modulares em Portugal",
+      "en": "Your company highlighted on Portugal's #1 modular homes portal"
     },
     "intro": {
-      "pt": "<br>Tens muitas leads mas pouca conversão?<br>A Fórmula Andar tem como objetivo transformar a comunicação de empresas de casas modulares - tanto para projetos de escala ou habitações privadas - de forma a gerar interesse na marca e aumentar vendas.",
-      "en": "<br>Tens muitas leads mas pouca conversão?<br>A Fórmula Andar tem como objetivo transformar a comunicação de empresas de casas modulares - tanto para projetos de escala ou habitações privadas - de forma a gerar interesse na marca e aumentar vendas."
+      "pt": "<br>Na AndarAgency ajudamos construtoras e empresas do setor modular a captar clientes qualificados, reduzir curiosos e transformar visibilidade em negócios reais.<br>Com uma comunidade já testada – mais de 5.000 visitantes e 2.500 leads geradas sem publicidade paga – tornámo-nos a referência nacional em procura de casas modulares. Agora, oferecemos-te essa audiência.<br><br>Quer precises de exposição de marca, de leads mensais garantidas ou de estratégias avançadas de redes sociais e relatórios de concorrência, temos o plano certo para colocar a tua empresa na frente do mercado.",
+      "en": "<br>At AndarAgency we help construction companies and modular sector businesses capture qualified clients, reduce curiosity seekers and turn visibility into real business.<br>With a tested community – more than 5,000 visitors and 2,500 leads generated without paid advertising – we have become the national reference in modular homes search. Now, we offer you this audience.<br><br>Whether you need brand exposure, guaranteed monthly leads or advanced social media strategies and competitor reports, we have the right plan to put your company ahead of the market."
     },
     "escolha-pagamento": {
       "pt": "Escolha como deseja pagar:",
@@ -297,10 +249,6 @@
     "ver-detalhes": {
       "pt": "Ver detalhes",
       "en": "See details"
-    },
-    "perguntas-frequentes": {
-      "pt": "Perguntas frequentes",
-      "en": "Frequent questions"
     },
     "copyright": {
       "pt": "<small>* Chamada para rede móvel nacional.</small><br>Copyright © <strong>{{YEAR}} - AndarAgency.</strong>",
