@@ -60,6 +60,20 @@ document.addEventListener("DOMContentLoaded", function() {
                     article += '<h3>' + plan.subtitle[lang] + '</h3>';
                 }
 
+                // Add included services list
+                data.services.forEach(function(group) {
+                    var features = group.services.filter(function(svc) {
+                        return svc.plans.indexOf(plan.id) !== -1;
+                    });
+                    if (features.length) {
+                        article += '<h4>' + group.title[lang] + '</h4><ul>';
+                        features.forEach(function(svc) {
+                            article += '<li>' + svc.description[lang] + '</li>';
+                        });
+                        article += '</ul>';
+                    }
+                });
+
                 article += '</article>';
 
                 // Append to plans section
