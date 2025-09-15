@@ -3100,12 +3100,16 @@ main header div.container h2 {
   width: 100%;
   color: inherit;
   font-size: clamp(25px, 1vw, 40px);
-  line-height: clamp(30px, 2vw, 40px);
+  line-height: clamp(30px, 1vw, 40px);
   text-align: inherit;
   margin: 0;
   padding: 0;
   font-weight: 400;
   color: rgb(161, 196, 253);
+}
+main header div.container h2 strong {
+  color: inherit;
+  font-weight: 600;
 }
 main header div.container h3 {
   transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
@@ -3125,7 +3129,7 @@ main header div.container h3 {
   text-align: inherit;
   margin: 0;
   padding: clamp(15px, 0.5vw, 30px) 0;
-  font-weight: 400;
+  font-weight: 300;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -3201,9 +3205,9 @@ main header div.container p {
 }
 main header div.container ul strong, main header div.container li strong,
 main header div.container p strong {
-  font-size: clamp(40px, 2.5vw, 60px);
-  line-height: clamp(40px, 2.5vw, 60px);
-  font-weight: 400;
+  font-size: clamp(16px, 1vw, 18px);
+  line-height: clamp(25px, 2vw, 30px);
+  font-weight: 500;
   color: inherit;
 }
 main header div.container ul small, main header div.container li small,
@@ -3278,6 +3282,12 @@ main header div.container p.price {
   gap: 5px;
   border-bottom: 1px solid rgba(161, 196, 253, 0.2);
 }
+main header div.container ul.price strong, main header div.container li.price strong,
+main header div.container p.price strong {
+  font-size: clamp(40px, 2.5vw, 60px);
+  line-height: clamp(40px, 2.5vw, 60px);
+  font-weight: 400;
+}
 main header div.container ul.tag, main header div.container li.tag,
 main header div.container p.tag {
   position: absolute;
@@ -3291,6 +3301,15 @@ main header div.container p.tag {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+}
+main header div.container ul.signature, main header div.container li.signature,
+main header div.container p.signature {
+  padding: clamp(25px, 2vw, 30px) 0 0 0;
+  margin: auto 0 0 0;
+}
+main header div.container ul.signature small, main header div.container li.signature small,
+main header div.container p.signature small {
+  opacity: 0.6;
 }
 main header div.container > p {
   margin: 0 auto clamp(80px, 5vw, 200px) auto;
@@ -3307,10 +3326,9 @@ main header div.container ul {
   margin-bottom: clamp(16px, 0.5vw, 18px);
 }
 main header div.container ul li {
-  display: flex;
-  flex-flow: row nowrap;
   font-size: clamp(16px, 0.5vw, 18px);
   line-height: clamp(25px, 2vw, 30px);
+  padding-left: clamp(25px, 2vw, 30px);
 }
 main header div.container ul.pagamento {
   border: 1px solid rgba(161, 196, 253, 0.4);
@@ -3325,6 +3343,7 @@ main header div.container ul.pagamento {
 main header div.container ul.pagamento li {
   width: auto;
   margin: 0;
+  padding-left: 0;
 }
 main header div.container ul.pagamento li p {
   font-weight: 400;
@@ -3426,6 +3445,130 @@ main header div.container ul.pagamento li button:visited.active:before {
 @media (max-width: 767px) {
   main header div.container ul.pagamento {
     justify-content: center;
+  }
+}
+main header div.container section.testimonials {
+  position: relative;
+  width: 100%;
+  margin: clamp(80px, 5vw, 200px) auto 0 auto;
+  border-radius: 20px;
+  padding: clamp(60px, 4vw, 80px) 0;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  color: #FFFFFF;
+}
+main header div.container section.testimonials h2 {
+  font-size: clamp(25px, 1vw, 40px);
+  line-height: clamp(30px, 1vw, 40px);
+}
+main header div.container section.testimonials h3 {
+  width: 100%;
+  justify-content: center;
+}
+main header div.container section.testimonials div.testimonials {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  overflow: auto;
+  gap: 30px;
+  margin: clamp(30px, 2vw, 60px) 0 0 0;
+  padding: 0 0 30px 0;
+}
+main header div.container section.testimonials div.testimonials article {
+  position: relative;
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: border;
+  -moz-transition-property: border;
+  -o-transition-property: border;
+  -webkit-transition-property: border;
+  border-radius: 20px;
+  width: 100%;
+  padding: clamp(30px, 2vw, 40px);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  color: #FFFFFF;
+  text-align: left;
+  background-color: rgba(15, 16, 18, 0.8);
+  min-width: 400px;
+  gap: 30px;
+  overflow: hidden;
+}
+main header div.container section.testimonials div.testimonials article picture {
+  position: relative;
+  margin: 0 auto 0 0;
+  width: clamp(50px, 3vw, 80px);
+  height: clamp(50px, 3vw, 80px);
+  overflow: hidden;
+  border-radius: 100%;
+}
+main header div.container section.testimonials div.testimonials article picture img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  -o-object-fit: cover;
+  -o-object-position: center;
+}
+main header div.container section.testimonials div.testimonials article picture.large {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: opacity, transform;
+  -moz-transition-property: opacity, transform;
+  -o-transition-property: opacity, transform;
+  -webkit-transition-property: opacity, transform;
+  position: absolute;
+  margin: 0;
+  width: 200%;
+  height: 100%;
+  border-radius: 0;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateX(-2.5%);
+  mix-blend-mode: luminosity;
+}
+main header div.container section.testimonials div.testimonials article picture.large img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  -o-object-fit: cover;
+  -o-object-position: center;
+}
+main header div.container section.testimonials div.testimonials article p:not(.signature):before, main header div.container section.testimonials div.testimonials article p:not(.signature):after {
+  content: ' " ';
+  color: rgb(161, 196, 253);
+}
+main header div.container section.testimonials div.testimonials article p:not(.signature) {
+  font-size: clamp(14px, 1vw, 16px);
+  line-height: clamp(20px, 1.5vw, 25px);
+}
+@media (hover: hover) {
+  main header div.container section.testimonials div.testimonials article:hover picture.large {
+    transform: translateX(0);
+    opacity: 0.05;
+  }
+}
+@media (max-width: 767px) {
+  main header div.container section.testimonials div.testimonials article {
+    min-width: 80%;
   }
 }
 main header div.container section.cta {
@@ -3536,6 +3679,7 @@ main header div.container section.faqs ul {
   gap: 0;
 }
 main header div.container section.faqs ul li {
+  padding-left: 0;
   max-width: 100%;
   border-bottom: 1px solid rgba(161, 196, 253, 0.4);
 }
@@ -3627,6 +3771,14 @@ main header div.container section.faqs ul li button:active.active svg,
 main header div.container section.faqs ul li button:visited.active svg {
   fill: rgb(161, 196, 253);
   transform: rotate(45deg);
+}
+main header div.container section.faqs ul li div.answer {
+  color: white;
+  position: relative;
+  float: left;
+  width: 100%;
+  display: none;
+  padding: clamp(15px, 1vw, 20px);
 }
 @media (max-width: 1500px) {
   main header div.container {
@@ -3765,7 +3917,10 @@ section.plans article button:visited:not(:nth-of-type(1)) {
   }
 }
 section.plans article ul li {
-  gap: 5px;
+  position: relative;
+  float: left;
+  display: inline-block;
+  vertical-align: top;
 }
 section.plans article ul li svg {
   transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
@@ -3776,12 +3931,53 @@ section.plans article ul li svg {
   -moz-transition-property: fill;
   -o-transition-property: fill;
   -webkit-transition-property: fill;
-  min-width: clamp(25px, 2vw, 30px);
-  min-height: clamp(25px, 2vw, 30px);
+  width: clamp(25px, 2vw, 30px);
+  height: clamp(25px, 2vw, 30px);
   padding: 5px;
   position: relative;
   display: inline-block;
   fill: #FFFFFF;
+}
+section.plans article ul li svg:first-of-type {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+section.plans article ul li svg.tooltip {
+  height: clamp(15px, 1vw, 20px);
+  width: clamp(15px, 1vw, 20px);
+  padding: 0;
+  margin-left: 5px;
+  top: clamp(2px, 0.3vw, 5px);
+  cursor: pointer;
+}
+section.plans article ul li span.tooltip {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: opacity, transform;
+  -moz-transition-property: opacity, transform;
+  -o-transition-property: opacity, transform;
+  -webkit-transition-property: opacity, transform;
+  background-color: #0f1012;
+  color: #FFFFFF;
+  position: absolute;
+  z-index: 100;
+  padding: 10px 15px;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 10px;
+  transform: translateY(-15px);
+  opacity: 0;
+  pointer-events: none;
+  width: 100%;
+  right: 0;
+  bottom: clamp(20px, 1.3vw, 25px);
+}
+section.plans article ul li span.tooltip.show {
+  transform: translateY(-5px);
+  opacity: 1;
 }
 section.plans article:before {
   transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
@@ -3949,6 +4145,7 @@ table.details tbody tr {
   border-radius: 20px;
 }
 table.details tbody tr td {
+  position: relative;
   transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
   -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
   -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
@@ -3980,6 +4177,45 @@ table.details tbody tr td svg {
   width: 40px;
   height: 40px;
   padding: 5px;
+}
+table.details tbody tr td svg.tooltip {
+  height: clamp(15px, 1vw, 20px);
+  width: clamp(15px, 1vw, 20px);
+  padding: 0;
+  top: clamp(2px, 0.3vw, 5px);
+  cursor: pointer;
+  display: inline;
+  margin: 0 0 0 5px;
+}
+table.details tbody tr td span.tooltip {
+  transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition-property: opacity, transform;
+  -moz-transition-property: opacity, transform;
+  -o-transition-property: opacity, transform;
+  -webkit-transition-property: opacity, transform;
+  background-color: rgb(161, 196, 253);
+  color: #0f1012;
+  position: absolute;
+  z-index: 100;
+  padding: 10px 15px;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 10px;
+  transform: translateY(0);
+  opacity: 0;
+  pointer-events: none;
+  width: 90vw;
+  max-width: calc(100% - clamp(15px, 1vw, 20px) * 2);
+  min-width: 400px;
+  left: clamp(15px, 1vw, 20px);
+  bottom: 100%;
+}
+table.details tbody tr td span.tooltip.show {
+  transform: translateY(10px);
+  opacity: 1;
 }
 table.details tbody tr td button,
 table.details tbody tr td button:focus,
@@ -4077,7 +4313,7 @@ table.details tbody tr td:has(button) {
   border-left: 1px solid rgba(161, 196, 253, 0.4) !important;
   border-bottom: 1px solid rgba(161, 196, 253, 0.4) !important;
 }
-table.details tbody tr td:has(svg) {
+table.details tbody tr td:has(svg):not(table.details tbody tr td:has(svg):first-child) {
   padding: 0;
 }
 table.details tbody tr td.active {
