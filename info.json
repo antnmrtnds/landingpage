@@ -19,8 +19,8 @@
         "en": "Includes"
       },
       "description": {
-        "pt": "Coloca a tua empresa no mapa do setor modular. <br>Com o plano Básico, a tua marca ganha presença no único portal nacional especializado em casas modulares. Tens direito a um bloco de empresa com logótipo, nome, link e descrição. <br>👉 É o primeiro passo para seres encontrado por clientes que procuram soluções modulares em Portugal.",
-        "en": "Place your company on the map of the modular sector. <br>With the Basic plan, your brand gains presence on the only national portal specialized in modular houses. You have the right to a company card with logo, name, link and description. <br>👉 It's the first step to be found by clients looking for modular solutions in Portugal."
+        "pt": "Coloca a tua empresa no mapa do setor modular. <br>Com o plano Básico, a tua marca ganha presença no único portal nacional especializado em casas modulares. Tens direito a um bloco de empresa com logótipo, nome, link e descrição. <br><br>👉 É o primeiro passo para seres encontrado por clientes que procuram soluções modulares em Portugal.",
+        "en": "Place your company on the map of the modular sector. <br>With the Basic plan, your brand gains presence on the only national portal specialized in modular houses. You have the right to a company card with logo, name, link and description. <br><br>👉 It's the first step to be found by clients looking for modular solutions in Portugal."
       },
       "popular": false,
       "price": {
@@ -39,8 +39,8 @@
         "en": "Everyting in Basic, plus"
       },
       "description": {
-        "pt": "Mais visibilidade. Leads qualificadas todos os meses. <br>Além de tudo o que o plano Básico oferece, com o Pro garantimos que recebes leads reais e qualificadas recolhidas em todo o ecossistema da Andar: do website, das redes sociais e até de mensagens diretas que recebemos no Instagram. Sempre que alguém procura uma solução que a tua empresa consegue oferecer, a lead vai direta para ti. <br>👉 É o plano certo para empresas que querem resultados concretos e novas oportunidades de negócio todos os meses.",
-        "en": "More visibility. Qualified leads every month. <br>In addition to everything the Basic plan offers, with the Pro we guarantee that you receive real and qualified leads collected in the entire Andar ecosystem: from the website, from social media and even from direct messages we receive on Instagram. Whenever someone searches for a solution that your company can offer, the lead goes directly to you. <br>👉 It's the right plan for companies that want concrete results and new business opportunities every month."
+        "pt": "Mais visibilidade. Leads qualificadas todos os meses. <br>Além de tudo o que o plano Básico oferece, com o Pro garantimos que recebes leads reais e qualificadas recolhidas em todo o ecossistema da Andar: do website, das redes sociais e até de mensagens diretas que recebemos no Instagram. Sempre que alguém procura uma solução que a tua empresa consegue oferecer, a lead vai direta para ti. <br><br>👉 É o plano certo para empresas que querem resultados concretos e novas oportunidades de negócio todos os meses.",
+        "en": "More visibility. Qualified leads every month. <br>In addition to everything the Basic plan offers, with the Pro we guarantee that you receive real and qualified leads collected in the entire Andar ecosystem: from the website, from social media and even from direct messages we receive on Instagram. Whenever someone searches for a solution that your company can offer, the lead goes directly to you. <br><br>👉 It's the right plan for companies that want concrete results and new business opportunities every month."
       },
       "popular": true,
       "price": {
@@ -59,8 +59,8 @@
         "en": "Everyting in Pro, plus"
       },
       "description": {
-        "pt": "Exposição máxima. Dados exclusivos. Conteúdo que gera autoridade. <br>O plano Andar é para empresas que querem liderar o setor modular em Portugal. Para além de tudo o que o Pro inclui, tens acesso a: dados exclusivos recolhidos pela Andar (preferências dos clientes, orçamentos, perguntas frequentes, etc.). Acompanhamento de redes sociais com plano de conteúdos afinado à tua marca. Conteúdo criado em colaboração com a Andar, aproveitando a nossa reputação e autoridade como “o Idealista das Casas Modulares”. <br>👉 É o pacote completo para construtoras que querem mais do que leads: querem reconhecimento, dados estratégicos e uma imagem forte no mercado.",
-        "en": "Maximum exposure. Exclusive data. Content that generates authority. <br>The Andar plan is for companies that want to lead the modular sector in Portugal. In addition to everything the Pro includes, you have access to: exclusive data collected by Andar (client preferences, budgets, frequently asked questions, etc.). Social media monitoring with content plan aligned with your brand. Content created in collaboration with Andar, leveraging our reputation and authority as “the Idealista of Modular Houses”. <br>👉 It's the complete package for construction companies that want more than leads: they want recognition, strategic data and a strong image in the market."
+        "pt": "Exposição máxima. Dados exclusivos. Conteúdo que gera autoridade. <br>O plano Andar é para empresas que querem liderar o setor modular em Portugal. Para além de tudo o que o Pro inclui, tens acesso a: dados exclusivos recolhidos pela Andar (preferências dos clientes, orçamentos, perguntas frequentes, etc.). Acompanhamento de redes sociais com plano de conteúdos afinado à tua marca. Conteúdo criado em colaboração com a Andar, aproveitando a nossa reputação e autoridade como “o Idealista das Casas Modulares”. <br><br>👉 É o pacote completo para construtoras que querem mais do que leads: querem reconhecimento, dados estratégicos e uma imagem forte no mercado.",
+        "en": "Maximum exposure. Exclusive data. Content that generates authority. <br>The Andar plan is for companies that want to lead the modular sector in Portugal. In addition to everything the Pro includes, you have access to: exclusive data collected by Andar (client preferences, budgets, frequently asked questions, etc.). Social media monitoring with content plan aligned with your brand. Content created in collaboration with Andar, leveraging our reputation and authority as “the Idealista of Modular Houses”. <br><br>👉 It's the complete package for construction companies that want more than leads: they want recognition, strategic data and a strong image in the market."
       },
       "popular": false,
       "price": {
@@ -223,8 +223,8 @@
       "en": "AndarAgency"
     },
     "subtitle": {
-      "pt": "A tua empresa em destaque no portal nº1 das casas modulares em Portugal",
-      "en": "Your company highlighted on Portugal's #1 modular homes portal"
+      "pt": "A tua empresa em destaque no <strong>portal nº1</strong> das casas modulares em Portugal",
+      "en": "Your company highlighted on <strong>Portugal's #1</strong> modular homes portal"
     },
     "intro": {
       "pt": "<br>Na AndarAgency ajudamos construtoras e empresas do setor modular a captar clientes qualificados, reduzir curiosos e transformar visibilidade em negócios reais.<br>Com uma comunidade já testada – mais de 5,000 visitantes e 2,500 leads captadas sem publicidade paga, em apenas alguns dias – vamos tornar-nos na referência nacional na procura de casas modulares. Agora, oferecemos-te essa audiência.<br><br>Quer precises de exposição de marca, de leads mensais garantidas ou de estratégias avançadas de redes sociais e relatórios de concorrência, temos o plano certo para colocar a tua empresa na frente do mercado.",
