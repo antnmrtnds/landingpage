@@ -206,12 +206,12 @@
       "en": "AndarAgency"
     },
     "seo-description": {
-      "pt": "A tua empresa em destaque no portal nº1 das casas modulares em Portugal",
-      "en": "Your company highlighted on Portugal's #1 modular homes portal"
+      "pt": "Fórmula Andar - Aumentar vendas",
+      "en": "Andar Formula - Boost sells"
     },
     "seo-keywords": {
-      "pt": "AndarAgency, casas modulares, portal empresas",
-      "en": "AndarAgency, modular homes, company portal"
+      "pt": "AndarAgency, Aumentar vendas",
+      "en": "AndarAgency, Boost sells"
     },
     "mes": {
       "pt": "mês",
@@ -226,12 +226,12 @@
       "en": "AndarAgency"
     },
     "subtitle": {
-      "pt": "A tua empresa em destaque no <strong>portal nº1</strong> das casas modulares em Portugal",
-      "en": "Your company highlighted on <strong>Portugal's #1</strong> modular homes portal"
+      "pt": "<strong>Fórmula Andar</strong> - Aumentar vendas",
+      "en": "Andar Formula - Boost sells"
     },
     "intro": {
-      "pt": "<br>Na AndarAgency ajudamos construtoras e empresas do setor modular a captar clientes qualificados, reduzir curiosos e transformar visibilidade em negócios reais.<br>Com uma comunidade já testada – mais de 5,000 visitantes e 2,500 leads captadas sem publicidade paga, em apenas alguns dias – vamos tornar-nos na referência nacional na procura de casas modulares. Agora, oferecemos-te essa audiência.<br><br>Quer precises de exposição de marca, de leads mensais garantidas ou de estratégias avançadas de redes sociais e relatórios de concorrência, temos o plano certo para colocar a tua empresa na frente do mercado.",
-      "en": "<br>At AndarAgency we help construction companies and modular sector businesses capture qualified clients, reduce curiosity seekers and turn visibility into real business.<br>With a tested community – more than 5,000 visitors and 2,500 leads generated without paid advertising – we have become the national reference in modular homes search. Now, we offer you this audience.<br><br>Whether you need brand exposure, guaranteed monthly leads or advanced social media strategies and competitor reports, we have the right plan to put your company ahead of the market."
+      "pt": "<br>Tens muitas leads mas pouca conversão?<br>A Fórmula Andar tem como objetivo transformar a comunicação de empresas de casas modulares - tanto para projetos de escala ou habitações privadas - de forma a gerar interesse na marca e aumentar vendas.",
+      "en": "<br>Tens muitas leads mas pouca conversão?<br>A Fórmula Andar tem como objetivo transformar a comunicação de empresas de casas modulares - tanto para projetos de escala ou habitações privadas - de forma a gerar interesse na marca e aumentar vendas."
     },
     "escolha-pagamento": {
       "pt": "Escolha como deseja pagar:",
@@ -252,6 +252,18 @@
     "ver-detalhes": {
       "pt": "Ver detalhes",
       "en": "See details"
+    },
+    "test-title": {
+      "pt": "Testemunhos",
+      "en": "Testimonials"
+    },
+    "test-subtitle": {
+      "pt": "Não acredite apenas na nossa palavra! Ouça o que nossos clientes têm a dizer.",
+      "en": "Don't take our word for it! Hear from our customers."
+    },
+    "perguntas-frequentes": {
+      "pt": "Perguntas frequentes",
+      "en": "Frequent questions"
     },
     "copyright": {
       "pt": "<small>* Chamada para rede móvel nacional.</small><br>Copyright © <strong>{{YEAR}} - AndarAgency.</strong>",
