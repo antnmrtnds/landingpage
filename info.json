@@ -5,7 +5,9 @@
     "description" : "A tua empresa em destaque no portal nº1 das casas modulares em Portugal",
     "lang" : "pt",
     "show-cta": true,
-    "show-detailed": false
+    "show-detailed": false,
+    "show-testimonials": false,
+    "show-faqs": false
   },
   "plans":[
     {
